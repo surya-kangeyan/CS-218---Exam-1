@@ -2,20 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vote for Contestant</title>
-</head>
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='styles/voting.css') }}">-->
 <body>
-    <h1>Vote for Contestant: {{ performer_id }}</h1>
+    <div class="container">
+        <h2>Vote for Contestant: {{ performer['name'] }}</h2>
 
-    <form method="POST">
-        {% for i in range(1, 6) %}
-            <label>Category {{ i }}:</label>
-            <input type="number" name="category{{ i }}" min="1" max="5" required><br><br>
-        {% endfor %}
-        <button type="submit">Submit Vote</button>
-    </form>
+        {% if time_left is defined and time_left > 0 %}
+        <p id="timer" data-time-left="{{ time_left }}">Time left: <span id="minutes"></span>:<span id="seconds"></span> mins left</p>
+        {% else %}
+        <p class="time-expired">Time has expired. Your score will be 0.</p>
+        {% endif %}
 
-    <br>
-    <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+        <form method="POST"
+      {% if time_left is defined and time_left <= 0 %}
+          class="hidden"
+      {% endif %}>
+    {% for i in range(1, 6) %}
+    <div class="category">
+        <label for="category{{ i }}">Category {{ i }}:</label>
+        <select id="category{{ i }}" name="category{{ i }}" required>
+            <option value="0">0 - Not Satisfactory</option>
+            <option value="1">1 - Satisfactory</option>
+        </select>
+    </div>
+    {% endfor %}
+    <button type="submit">Submit Vote</button>
+</form>
+
+
+        <a href="{{ url_for('dashboard') }}" class="back-link">Back to Dashboard</a>
+    </div>
+
+    <script>
+        const timerElement = document.getElementById('timer');
+        if (timerElement) {
+            let timeLeft = parseInt(timerElement.dataset.timeLeft);
+            const minutesSpan = document.getElementById('minutes');
+            const secondsSpan = document.getElementById('seconds');
+
+            function updateTimer() {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                minutesSpan.textContent = minutes.toString().padStart(2, '0');
+                secondsSpan.textContent = seconds.toString().padStart(2, '0');
+
+                if (timeLeft > 0) {
+                    timeLeft--;
+                    setTimeout(updateTimer, 1000);
+                } else {
+                    timerElement.textContent = "Time has expired. Your score will be 0.";
+                    document.querySelector('form').classList.add('hidden');
+                }
+            }
+
+            updateTimer();
+        }
+    </script>
 </body>
 </html>

@@ -2,13 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+<!--<link rel="stylesheet" href="{{ url_for('static', filename='styles/dashboard.css') }}">-->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome, {{ session['judge_id'] }}</h1>
+    <h1>Dashboard</h1>
 
-    <h2>Contestants Scores</h2>
-    <table border="1" cellpadding="10">
+    {% if session.get('is_admin') %}
+    <h2>Add New Contestant</h2>
+    <form action="{{ url_for('add_contestant') }}" method="POST">
+        <input type="text" name="performer_name" required>
+        <button type="submit">Add Contestant</button>
+    </form>
+    {% endif %}
+
+    <h2>Contestants</h2>
+    <table>
         <thead>
             <tr>
                 <th>Contestant Name</th>
@@ -17,8 +41,8 @@
                 <th>Judge 3 Scores</th>
                 <th>Weighted Score</th>
                 <th>Rank</th>
-                <th>Edit</th>
-                <th>Delete</th>
+                <th>Time Left</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -31,12 +55,19 @@
                 <td>{{ performer['weighted_score'] }}</td>
                 <td>{{ performer['rank'] }}</td>
                 <td>
-                    <a href="{{ url_for('edit_score', performer_id=performer['id']) }}">Edit Scores</a>
+                    {% if performer.get('time_left', 0) > 0 %}
+                    <span class="timer" data-time-left="{{ performer['time_left'] }}"></span>
+                    {% else %}
+                    Time expired
+                    {% endif %}
                 </td>
                 <td>
-                    <form method="POST" action="{{ url_for('delete_contestant', performer_id=performer['id']) }}">
+                    <a href="{{ url_for('edit_score', performer_id=performer['id']) }}">Edit Scores</a>
+                    {% if session.get('is_admin') %}
+                    <form action="{{ url_for('delete_contestant', performer_id=performer['id']) }}" method="POST" style="display: inline;">
                         <button type="submit">Delete</button>
                     </form>
+                    {% endif %}
                 </td>
             </tr>
             {% else %}
@@ -47,29 +78,31 @@
         </tbody>
     </table>
 
-    <br>
-
-    {% if session.get('is_admin') %}
-        <h3>Add New Contestant</h3>
-        <form method="POST" action="{{ url_for('add_contestant') }}">
-            <input type="text" name="performer_name" placeholder="Enter contestant name" required><br><br>
-            <button type="submit">Add Contestant</button>
-        </form>
-    {% endif %}
-
-    <br>
     <a href="{{ url_for('logout') }}">Logout</a>
 
-    {% with messages = get_flashed_messages(with_categories=True) %}
-        {% if messages %}
-            <div class="flash-messages">
-                {% for category, message in messages %}
-                    <div class="alert alert-{{ category }}">
-                        {{ message }}
-                    </div>
-                {% endfor %}
-            </div>
-        {% endif %}
-    {% endwith %}
+    <script>
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+            return `${minutes}:${remainingSeconds.toString().padStart(2, '0')} mins left`;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const timers = document.querySelectorAll('.timer');
+            timers.forEach(timer => {
+                let timeLeft = parseInt(timer.dataset.timeLeft);
+                timer.textContent = formatTime(timeLeft);
+                const interval = setInterval(() => {
+                    if (timeLeft > 0) {
+                        timeLeft--;
+                        timer.textContent = formatTime(timeLeft);
+                    } else {
+                        clearInterval(interval);
+                        timer.textContent = 'Time expired';
+                    }
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 </html>

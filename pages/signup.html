@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Judge Signup</title>
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='styles/signup.css') }}">-->
+</head>
+<body>
+    <h1>Judge Signup</h1>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Enter your name" required><br><br>
+        <input type="email" name="email" placeholder="Enter your @sjsu.edu email" required><br><br>
+        <input type="password" name="password" placeholder="Enter a password" required><br><br>
+        <label>
+            <input type="checkbox" name="is_admin"> Register as Admin
+        </label><br><br>
+        <button type="submit">Signup</button>
+    </form>
+
+    <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a>.</p>
+
+    {% with messages = get_flashed_messages(with_categories=True) %}
+      {% if messages %}
+        <ul>
+          {% for category, message in messages %}
+            <li class="{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</body>
+</html>
