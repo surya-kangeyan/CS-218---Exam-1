@@ -7,22 +7,17 @@ from datetime import datetime
 import logging
 from datetime import datetime, timedelta
 
-
-
-# Initialize the Flask app and DynamoDB
 app = Flask(__name__, template_folder='pages')
-app.secret_key = 'skexam1'  # Replace with a secure key
-# Setup logging
+app.secret_key = 'skexam1'
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
         logging.FileHandler('app.log'),
-        logging.StreamHandler()  # This prints logs to the console
+        logging.StreamHandler()
     ]
 )
 
-# Initialize DynamoDB resource and connect to tables
 dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 performers_table = dynamodb.Table('contestants')
 scores_table = dynamodb.Table('scores')
@@ -38,32 +33,26 @@ def signup():
         name = request.form['name']
         email = request.form['email']
         password = request.form['password']
-        is_admin = request.form.get('is_admin') == 'on'  # Checkbox value
+        is_admin = request.form.get('is_admin') == 'on'
 
-        # Check if email is valid and unique
         if not is_valid_email(email):
             flash('Invalid email. Please use your @sjsu.edu email.', 'danger')
             return redirect(url_for('signup'))
 
-        # Check if judge already exists using 'id' as the key
-        response = judges_table.get_item(Key={'id': email})  # Changed 'email' to 'id'
+        response = judges_table.get_item(Key={'id': email})
         if 'Item' in response:
             flash('This email is already registered. Please log in.', 'danger')
             return redirect(url_for('login'))
 
-        # Check if an admin already exists
         existing_admin = judges_table.scan(
             FilterExpression=boto3.dynamodb.conditions.Attr('is_admin').eq(True)
         ).get('Items', [])
 
-        # Prevent further admin registration if an admin already exists
         if existing_admin:
-            is_admin = False  # Ignore admin request if an admin already exists
-
-        # Hash the password and store user in DynamoDB, setting 'id' to 'email'
+            is_admin = False
         hashed_password = generate_password_hash(password, method='pbkdf2:sha256')
         judges_table.put_item(Item={
-            'id': email,  # Set 'id' to the email for unique identification
+            'id': email,
             'name': name,
             'email': email,
             'password': hashed_password,
@@ -83,11 +72,9 @@ def login():
         email = request.form['email']
         password = request.form['password']
 
-        # Retrieve judge data from DynamoDB using 'id' as the key
-        response = judges_table.get_item(Key={'id': email})  # Changed 'email' to 'id'
+        response = judges_table.get_item(Key={'id': email})
         judge = response.get('Item')
 
-        # Check if judge exists and password matches
         if judge and check_password_hash(judge['password'], password):
             session['judge_id'] = email
             session['is_admin'] = judge.get('is_admin', False)
@@ -128,7 +115,6 @@ def dashboard():
                 judge3_count = sum(score['category_scores'])
                 weighted_score += judge3_count * Decimal('0.5')
 
-        # Calculate time_left (assuming end_time is stored in the performer's data)
         end_time = datetime.fromisoformat(performer.get('end_time', datetime.now().isoformat()))
         time_left = max(0, (end_time - datetime.now()).total_seconds())
 
@@ -137,7 +123,7 @@ def dashboard():
             'judge2_count': int(judge2_count),
             'judge3_count': int(judge3_count),
             'weighted_score': float(weighted_score),
-            'time_left': int(time_left)  # Add this line
+            'time_left': int(time_left)
         })
         ranked_performers.append((performer, weighted_score))
 
@@ -165,15 +151,13 @@ def edit_score(performer_id):
 
     performer = performers_table.get_item(Key={'id': performer_id}).get('Item', {})
 
-    # Calculate time_left
     end_time = datetime.fromisoformat(performer.get('end_time', datetime.now().isoformat()))
     time_left = max(0, (end_time - datetime.now()).total_seconds())
 
     if request.method == 'POST':
         if time_left > 0:
-            # Change category scores to accept values between 0 and 5
             category_scores = [Decimal(int(request.form[f'category{i}'])) for i in range(1, 6)]
-            if any(score < 0 or score > 5 for score in category_scores):  # Validate score range
+            if any(score < 0 or score > 5 for score in category_scores):
                 logging.warning(f"Invalid scores entered for performer {performer_id} by {session['judge_id']}")
                 flash('Scores must be between 0 and 5 for each category.', 'danger')
                 return redirect(url_for('edit_score', performer_id=performer_id))
@@ -208,13 +192,10 @@ def delete_contestant(performer_id):
         return redirect(url_for('dashboard'))
 
     try:
-        # Add logging to debug
         logging.info(f"Attempting to delete contestant: {performer_id}")
 
-        # Delete the contestant from the contestants table
         performers_table.delete_item(Key={'id': performer_id})
 
-        # Query and delete associated scores
         response = scores_table.query(
             KeyConditionExpression=boto3.dynamodb.conditions.Key('contestant_id').eq(performer_id)
         )

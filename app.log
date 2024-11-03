@@ -935,3 +935,105 @@
 2024-10-30 18:25:00,939 - INFO - Login successful for: sk@sjsu.edu
 2024-10-30 18:25:00,941 - INFO - 127.0.0.1 - - [30/Oct/2024 18:25:00] "[32mPOST /login HTTP/1.1[0m" 302 -
 2024-10-30 18:25:01,309 - INFO - 127.0.0.1 - - [30/Oct/2024 18:25:01] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:08:01,242 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-02 20:08:01,374 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3005
+ * Running on http://10.0.0.76:3005
+2024-11-02 20:08:01,374 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-02 20:08:01,375 - INFO -  * Restarting with stat
+2024-11-02 20:08:01,512 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-02 20:08:01,566 - WARNING -  * Debugger is active!
+2024-11-02 20:08:01,575 - INFO -  * Debugger PIN: 912-610-788
+2024-11-02 20:08:19,843 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:19] "GET / HTTP/1.1" 200 -
+2024-11-02 20:08:19,972 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-02 20:08:23,219 - INFO - Login successful for: sk@sjsu.edu
+2024-11-02 20:08:23,220 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:23] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-11-02 20:08:23,738 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:23] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:08:26,867 - INFO - deleting contestant 
+2024-11-02 20:08:26,867 - INFO - Attempting to delete contestant: performer_20241030175538
+2024-11-02 20:08:27,155 - INFO - Successfully deleted contestant: performer_20241030175538
+2024-11-02 20:08:27,156 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:27] "[32mPOST /delete_contestant/performer_20241030175538 HTTP/1.1[0m" 302 -
+2024-11-02 20:08:27,431 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:27] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:08:29,134 - INFO - deleting contestant 
+2024-11-02 20:08:29,135 - INFO - Attempting to delete contestant: performer_20241030182447
+2024-11-02 20:08:29,323 - INFO - Successfully deleted contestant: performer_20241030182447
+2024-11-02 20:08:29,325 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:29] "[32mPOST /delete_contestant/performer_20241030182447 HTTP/1.1[0m" 302 -
+2024-11-02 20:08:29,428 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:29] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:08:37,398 - INFO - New contestant added: khamalesh  with ID performer_20241102200837
+2024-11-02 20:08:37,401 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:37] "[32mPOST /add_contestant HTTP/1.1[0m" 302 -
+2024-11-02 20:08:37,674 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:37] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:08:39,801 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:39] "GET /edit_score/performer_20241102200837 HTTP/1.1" 200 -
+2024-11-02 20:08:46,743 - INFO - Scores updated for performer performer_20241102200837 by sk@sjsu.edu
+2024-11-02 20:08:46,744 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:46] "[32mPOST /edit_score/performer_20241102200837 HTTP/1.1[0m" 302 -
+2024-11-02 20:08:47,009 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:47] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:08:49,547 - INFO - User logged out.
+2024-11-02 20:08:49,550 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:49] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-11-02 20:08:49,564 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:49] "GET /login HTTP/1.1" 200 -
+2024-11-02 20:08:55,057 - INFO - 127.0.0.1 - - [02/Nov/2024 20:08:55] "GET /signup HTTP/1.1" 200 -
+2024-11-02 20:09:06,939 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:06] "[32mPOST /signup HTTP/1.1[0m" 302 -
+2024-11-02 20:09:06,948 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:06] "GET /login HTTP/1.1" 200 -
+2024-11-02 20:09:12,315 - INFO - Login successful for: judge2@sjsu.edu
+2024-11-02 20:09:12,316 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-02 20:09:12,576 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:12] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:09:16,404 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:16] "GET /edit_score/performer_20241102200837 HTTP/1.1" 200 -
+2024-11-02 20:09:22,351 - INFO - Scores updated for performer performer_20241102200837 by judge2@sjsu.edu
+2024-11-02 20:09:22,353 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:22] "[32mPOST /edit_score/performer_20241102200837 HTTP/1.1[0m" 302 -
+2024-11-02 20:09:22,777 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:22] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:09:26,236 - INFO - User logged out.
+2024-11-02 20:09:26,239 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:26] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-11-02 20:09:26,249 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:26] "GET /login HTTP/1.1" 200 -
+2024-11-02 20:09:28,524 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:28] "GET /signup HTTP/1.1" 200 -
+2024-11-02 20:09:37,519 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:37] "[32mPOST /signup HTTP/1.1[0m" 302 -
+2024-11-02 20:09:37,525 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:37] "GET /login HTTP/1.1" 200 -
+2024-11-02 20:09:42,390 - INFO - Login successful for: judge3@sjsu.edu
+2024-11-02 20:09:42,392 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-02 20:09:42,651 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:42] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:09:45,688 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:45] "GET /edit_score/performer_20241102200837 HTTP/1.1" 200 -
+2024-11-02 20:09:52,082 - INFO - Scores updated for performer performer_20241102200837 by judge3@sjsu.edu
+2024-11-02 20:09:52,084 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:52] "[32mPOST /edit_score/performer_20241102200837 HTTP/1.1[0m" 302 -
+2024-11-02 20:09:52,361 - INFO - 127.0.0.1 - - [02/Nov/2024 20:09:52] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:10:01,393 - INFO - User logged out.
+2024-11-02 20:10:01,395 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:01] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-11-02 20:10:01,403 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:01] "GET /login HTTP/1.1" 200 -
+2024-11-02 20:10:07,837 - INFO - Login successful for: sk@sjsu.edu
+2024-11-02 20:10:07,837 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:07] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-02 20:10:08,105 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:08] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:10:12,884 - INFO - New contestant added: surya with ID performer_20241102201012
+2024-11-02 20:10:12,886 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:12] "[32mPOST /add_contestant HTTP/1.1[0m" 302 -
+2024-11-02 20:10:13,355 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:13] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:10:15,936 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:15] "GET /edit_score/performer_20241102201012 HTTP/1.1" 200 -
+2024-11-02 20:10:20,706 - INFO - Scores updated for performer performer_20241102201012 by sk@sjsu.edu
+2024-11-02 20:10:20,707 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:20] "[32mPOST /edit_score/performer_20241102201012 HTTP/1.1[0m" 302 -
+2024-11-02 20:10:21,211 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:21] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:10:25,032 - INFO - User logged out.
+2024-11-02 20:10:25,034 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:25] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-11-02 20:10:25,043 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:25] "GET /login HTTP/1.1" 200 -
+2024-11-02 20:10:29,977 - INFO - Login successful for: judge2@sjsu.edu
+2024-11-02 20:10:29,978 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:29] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-02 20:10:30,469 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:30] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:10:32,235 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:32] "GET /edit_score/performer_20241102201012 HTTP/1.1" 200 -
+2024-11-02 20:10:36,811 - INFO - Scores updated for performer performer_20241102201012 by judge2@sjsu.edu
+2024-11-02 20:10:36,813 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:36] "[32mPOST /edit_score/performer_20241102201012 HTTP/1.1[0m" 302 -
+2024-11-02 20:10:37,276 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:37] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:10:39,253 - INFO - User logged out.
+2024-11-02 20:10:39,255 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:39] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-11-02 20:10:39,264 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:39] "GET /login HTTP/1.1" 200 -
+2024-11-02 20:10:43,833 - INFO - Login successful for: judge3@sjsu.edu
+2024-11-02 20:10:43,834 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-02 20:10:44,302 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:44] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:10:48,261 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:48] "GET /edit_score/performer_20241102201012 HTTP/1.1" 200 -
+2024-11-02 20:10:54,258 - INFO - Scores updated for performer performer_20241102201012 by judge3@sjsu.edu
+2024-11-02 20:10:54,260 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:54] "[32mPOST /edit_score/performer_20241102201012 HTTP/1.1[0m" 302 -
+2024-11-02 20:10:54,842 - INFO - 127.0.0.1 - - [02/Nov/2024 20:10:54] "GET /dashboard HTTP/1.1" 200 -
+2024-11-02 20:11:08,413 - INFO - User logged out.
+2024-11-02 20:11:08,415 - INFO - 127.0.0.1 - - [02/Nov/2024 20:11:08] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-11-02 20:11:08,425 - INFO - 127.0.0.1 - - [02/Nov/2024 20:11:08] "GET /login HTTP/1.1" 200 -
+2024-11-02 20:11:19,174 - INFO - Login successful for: judge3@sjsu.edu
+2024-11-02 20:11:19,175 - INFO - 127.0.0.1 - - [02/Nov/2024 20:11:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-02 20:11:19,640 - INFO - 127.0.0.1 - - [02/Nov/2024 20:11:19] "GET /dashboard HTTP/1.1" 200 -
+2024-11-03 15:27:31,236 - INFO -  * Detected change in '/Users/suryakangeyan/Projects/pythonProjects/exam1/app.py', reloading
+2024-11-03 15:27:31,284 - INFO -  * Restarting with stat
+2024-11-03 15:27:31,533 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-03 15:27:31,628 - WARNING -  * Debugger is active!
+2024-11-03 15:27:31,639 - INFO -  * Debugger PIN: 912-610-788
