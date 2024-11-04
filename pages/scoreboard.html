@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .scoreboard {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .scoreboard-header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+        }
+        .scoreboard-row {
+            display: flex;
+            border-bottom: 1px solid #e0e0e0;
+            transition: background-color 0.3s ease;
+        }
+        .scoreboard-row:last-child {
+            border-bottom: none;
+        }
+        .scoreboard-row:hover {
+            background-color: #f5f5f5;
+        }
+        .scoreboard-cell {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+        }
+        .rank-1 {
+            background-color: #ffd700;
+            font-weight: bold;
+        }
+        .rank-2 {
+            background-color: #c0c0c0;
+        }
+        .rank-3 {
+            background-color: #cd7f32;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Scoreboard</h1>
+        <div class="scoreboard">
+            <div class="scoreboard-row scoreboard-header">
+                <div class="scoreboard-cell">Rank</div>
+                <div class="scoreboard-cell">Contestant</div>
+                <div class="scoreboard-cell">SK Scores</div>
+                <div class="scoreboard-cell">Judge 2 Scores</div>
+                <div class="scoreboard-cell">Judge 3 Scores</div>
+                <div class="scoreboard-cell">Weighted Score</div>
+            </div>
+            {% for performer in performers %}
+            <div class="scoreboard-row {% if performer.rank == 1 %}rank-1{% elif performer.rank == 2 %}rank-2{% elif performer.rank == 3 %}rank-3{% endif %}">
+                <div class="scoreboard-cell">{{ performer.rank }}</div>
+                <div class="scoreboard-cell">{{ performer.name }}</div>
+                <div class="scoreboard-cell">{{ performer.judge1_count }}</div>
+                <div class="scoreboard-cell">{{ performer.judge2_count }}</div>
+                <div class="scoreboard-cell">{{ performer.judge3_count }}</div>
+                <div class="scoreboard-cell">{{ performer.weighted_score }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        <a href="{{ url_for('dashboard') }}" class="back-button">Back to Dashboard</a>
+    </div>
+</body>
+</html>

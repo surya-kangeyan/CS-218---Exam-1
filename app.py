@@ -239,6 +239,49 @@ def add_contestant():
     flash(f'Contestant "{performer_name}" added successfully! Judges have 5 minutes to enter scores.', 'success')
     return redirect(url_for('dashboard'))
 
+
+@app.route('/scoreboard')
+def scoreboard():
+    if 'judge_id' not in session:
+        return redirect(url_for('login'))
+
+    performers = performers_table.scan()['Items']
+    ranked_performers = []
+
+    for performer in performers:
+        score_response = scores_table.query(
+            KeyConditionExpression=boto3.dynamodb.conditions.Key('contestant_id').eq(performer['id'])
+        )
+
+        judge1_count = judge2_count = judge3_count = Decimal(0)
+        weighted_score = Decimal(0)
+
+        for score in score_response['Items']:
+            if score['judge_id'] == 'sk@sjsu.edu':
+                judge1_count = sum(score['category_scores'])
+                weighted_score += judge1_count * Decimal('2.0')
+            elif score['judge_id'] == 'judge2@sjsu.edu':
+                judge2_count = sum(score['category_scores'])
+                weighted_score += judge2_count * Decimal('0.5')
+            elif score['judge_id'] == 'judge3@sjsu.edu':
+                judge3_count = sum(score['category_scores'])
+                weighted_score += judge3_count * Decimal('0.5')
+
+        performer.update({
+            'judge1_count': int(judge1_count),
+            'judge2_count': int(judge2_count),
+            'judge3_count': int(judge3_count),
+            'weighted_score': float(weighted_score)
+        })
+
+        ranked_performers.append(performer)
+
+    ranked_performers.sort(key=lambda x: x['weighted_score'], reverse=True)
+
+    for rank, performer in enumerate(ranked_performers, start=1):
+        performer['rank'] = rank
+
+    return render_template('scoreboard.html', performers=ranked_performers)
 @app.route('/logout')
 def logout():
     session.pop('judge_id', None)

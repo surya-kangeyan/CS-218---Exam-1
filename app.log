@@ -1037,3 +1037,50 @@
 2024-11-03 15:27:31,533 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
 2024-11-03 15:27:31,628 - WARNING -  * Debugger is active!
 2024-11-03 15:27:31,639 - INFO -  * Debugger PIN: 912-610-788
+2024-11-03 16:01:39,395 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-03 16:01:39,507 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3005
+ * Running on http://10.0.0.76:3005
+2024-11-03 16:01:39,507 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-03 16:01:39,507 - INFO -  * Restarting with stat
+2024-11-03 16:01:39,645 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-03 16:01:39,702 - WARNING -  * Debugger is active!
+2024-11-03 16:01:39,709 - INFO -  * Debugger PIN: 912-610-788
+2024-11-03 16:01:47,505 - INFO - 127.0.0.1 - - [03/Nov/2024 16:01:47] "GET / HTTP/1.1" 200 -
+2024-11-03 16:01:49,971 - INFO - Login successful for: judge3@sjsu.edu
+2024-11-03 16:01:49,971 - INFO - 127.0.0.1 - - [03/Nov/2024 16:01:49] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-11-03 16:01:50,457 - INFO - 127.0.0.1 - - [03/Nov/2024 16:01:50] "GET /dashboard HTTP/1.1" 200 -
+2024-11-03 16:01:54,507 - INFO - User logged out.
+2024-11-03 16:01:54,508 - INFO - 127.0.0.1 - - [03/Nov/2024 16:01:54] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-11-03 16:01:54,512 - INFO - 127.0.0.1 - - [03/Nov/2024 16:01:54] "GET /login HTTP/1.1" 200 -
+2024-11-03 16:02:02,117 - INFO - Login successful for: sk@sjsu.edu
+2024-11-03 16:02:02,118 - INFO - 127.0.0.1 - - [03/Nov/2024 16:02:02] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-03 16:02:02,561 - INFO - 127.0.0.1 - - [03/Nov/2024 16:02:02] "GET /dashboard HTTP/1.1" 200 -
+2024-11-04 09:54:30,928 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-04 09:54:31,028 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3005
+ * Running on http://10.0.0.76:3005
+2024-11-04 09:54:31,028 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 09:54:31,029 - INFO -  * Restarting with stat
+2024-11-04 09:54:31,164 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-04 09:54:31,223 - WARNING -  * Debugger is active!
+2024-11-04 09:54:31,234 - INFO -  * Debugger PIN: 912-610-788
+2024-11-04 09:54:39,428 - INFO - 127.0.0.1 - - [04/Nov/2024 09:54:39] "GET / HTTP/1.1" 200 -
+2024-11-04 09:54:42,605 - INFO - Login successful for: sk@sjsu.edu
+2024-11-04 09:54:42,606 - INFO - 127.0.0.1 - - [04/Nov/2024 09:54:42] "[32mPOST / HTTP/1.1[0m" 302 -
+2024-11-04 09:54:43,466 - INFO - 127.0.0.1 - - [04/Nov/2024 09:54:43] "GET /dashboard HTTP/1.1" 200 -
+2024-11-04 09:54:46,296 - INFO - 127.0.0.1 - - [04/Nov/2024 09:54:46] "GET /scoreboard HTTP/1.1" 200 -
+2024-11-04 09:55:10,843 - INFO - 127.0.0.1 - - [04/Nov/2024 09:55:10] "GET /dashboard HTTP/1.1" 200 -
+2024-11-04 09:55:26,337 - INFO - New contestant added: jes with ID performer_20241104095526
+2024-11-04 09:55:26,338 - INFO - 127.0.0.1 - - [04/Nov/2024 09:55:26] "[32mPOST /add_contestant HTTP/1.1[0m" 302 -
+2024-11-04 09:55:27,085 - INFO - 127.0.0.1 - - [04/Nov/2024 09:55:27] "GET /dashboard HTTP/1.1" 200 -
+2024-11-04 09:55:30,004 - INFO - 127.0.0.1 - - [04/Nov/2024 09:55:30] "GET /scoreboard HTTP/1.1" 200 -
+2024-11-04 09:55:33,114 - INFO - 127.0.0.1 - - [04/Nov/2024 09:55:33] "GET /dashboard HTTP/1.1" 200 -
+2024-11-04 09:55:34,704 - INFO - 127.0.0.1 - - [04/Nov/2024 09:55:34] "GET /edit_score/performer_20241104095526 HTTP/1.1" 200 -
+2024-11-04 09:55:41,483 - INFO - Scores updated for performer performer_20241104095526 by sk@sjsu.edu
+2024-11-04 09:55:41,486 - INFO - 127.0.0.1 - - [04/Nov/2024 09:55:41] "[32mPOST /edit_score/performer_20241104095526 HTTP/1.1[0m" 302 -
+2024-11-04 09:55:42,138 - INFO - 127.0.0.1 - - [04/Nov/2024 09:55:42] "GET /dashboard HTTP/1.1" 200 -
+2024-11-04 09:55:46,800 - INFO - 127.0.0.1 - - [04/Nov/2024 09:55:46] "GET /scoreboard HTTP/1.1" 200 -
+2024-11-04 09:55:55,434 - INFO - 127.0.0.1 - - [04/Nov/2024 09:55:55] "GET /dashboard HTTP/1.1" 200 -

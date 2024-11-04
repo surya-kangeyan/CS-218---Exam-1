@@ -24,6 +24,8 @@
     <h1>Dashboard</h1>
 
     {% if session.get('is_admin') %}
+    <a href="{{ url_for('scoreboard') }}" class="scoreboard-button">View Scoreboard</a>
+
     <h2>Add New Contestant</h2>
     <form action="{{ url_for('add_contestant') }}" method="POST">
         <input type="text" name="performer_name" required>
