@@ -3,30 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <title>Judge Signup</title>
-    <!--<link rel="stylesheet" href="{{ url_for('static', filename='styles/signup.css') }}">-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 30px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        p {
+            margin-top: 20px;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .danger {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+        }
+    </style>
 </head>
 <body>
-    <h1>Judge Signup</h1>
-    <form method="POST">
-        <input type="text" name="name" placeholder="Enter your name" required><br><br>
-        <input type="email" name="email" placeholder="Enter your @sjsu.edu email" required><br><br>
-        <input type="password" name="password" placeholder="Enter a password" required><br><br>
-        <label>
-            <input type="checkbox" name="is_admin"> Register as Admin
-        </label><br><br>
-        <button type="submit">Signup</button>
-    </form>
+    <div class="container">
+        <h1>Judge Signup</h1>
+        <form method="POST">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter your @sjsu.edu email" required>
+            <input type="password" name="password" placeholder="Enter a password" required>
+            <label style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                <input type="checkbox" name="is_admin">
+                <span style="margin-left: 5px;">Register as Admin</span>
+            </label>
+            <button type="submit">Signup</button>
+        </form>
 
-    <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a>.</p>
+        <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a>.</p>
 
-    {% with messages = get_flashed_messages(with_categories=True) %}
-      {% if messages %}
-        <ul>
-          {% for category, message in messages %}
-            <li class="{{ category }}">{{ message }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    {% endwith %}
+        {% with messages = get_flashed_messages(with_categories=True) %}
+          {% if messages %}
+            <ul>
+              {% for category, message in messages %}
+                <li class="{{ category }}">{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+    </div>
 </body>
 </html>

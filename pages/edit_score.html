@@ -4,30 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vote for Contestant</title>
-    <!--<link rel="stylesheet" href="{{ url_for('static', filename='styles/edit_score.css') }}">-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #timer {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h2>Vote for Contestant: {{ performer['name'] }}</h2>
+    <h2 style="font-size: 24px;">Vote for Contestant: {{ performer['name'] }}</h2>
 
     {% if time_left > 0 %}
-    <p id="timer" data-time-left="{{ time_left }}">Time left: {{ time_left }} seconds</p>
+    <p id="timer" data-time-left="{{ time_left }}" style="color: #4CAF50;">Time left: {{ time_left }} seconds</p>
     {% else %}
-    <p>Time has expired. Your score will be 0.</p>
+    <p style="text-align: center; color: #f44336; font-weight: bold;">Time has expired. Your score will be 0.</p>
     {% endif %}
 
     <form method="POST" {% if time_left <= 0 %}style="display: none;"{% endif %}>
         {% for i in range(1, 6) %}
         <div>
-            <label for="category{{ i }}">Category {{ i }}:</label>
+            <label for="category{{ i }}" style="color: #4CAF50;">Category {{ i }}:</label>
             <input type="text" id="category{{ i }}" name="category{{ i }}" required
                    oninput="this.value = this.value.replace(/[^0-5]/g, '')"
-                   placeholder="Enter a score between 0 and 5">
+                   placeholder="Enter a score between 0 and 5"
+                   style="transition: border-color 0.3s;">
         </div>
         {% endfor %}
-        <button type="submit">Submit Vote</button>
+        <button type="submit" style="display: block; width: 100%; margin-top: 20px; transition: background-color 0.3s;">Submit Vote</button>
     </form>
 
-    <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+    <a href="{{ url_for('dashboard') }}" style="display: block; text-align: center; margin-top: 20px; color: #4CAF50; text-decoration: none;">Back to Dashboard</a>
 
     <script>
         const timerElement = document.getElementById('timer');
@@ -37,13 +99,30 @@
                 if (timeLeft > 0) {
                     timeLeft--;
                     timerElement.textContent = `Time left: ${timeLeft} seconds`;
+                    if (timeLeft <= 10) {
+                        timerElement.style.color = '#f44336';
+                    }
                 } else {
                     clearInterval(interval);
                     timerElement.textContent = 'Time has expired. Your score will be 0.';
+                    timerElement.style.color = '#f44336';
                     document.querySelector('form').style.display = 'none';
                 }
             }, 1000);
         }
+
+        // Add focus and blur effects to input fields
+        const inputs = document.querySelectorAll('input[type="text"]');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.style.borderColor = '#4CAF50';
+                input.style.boxShadow = '0 0 5px rgba(76, 175, 80, 0.5)';
+            });
+            input.addEventListener('blur', () => {
+                input.style.borderColor = '#ddd';
+                input.style.boxShadow = 'none';
+            });
+        });
     </script>
 </body>
 </html>
