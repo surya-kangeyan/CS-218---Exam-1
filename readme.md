@@ -1,6 +1,6 @@
 # CS -218 Exam 1 : Scoring System
 
-This web-based application manages and scores a talent show at San Jose State University (SJSU). It allows judges to register, log in, and score contestants in real-time.
+This web-based application manages and scores a talent show at San Jose State University (SJSU). It allows judges to register, log in, and score contestants in real time.
 
 ## Features
 
@@ -72,4 +72,4 @@ This web-based application manages and scores a talent show at San Jose State Un
 
 This application is designed for use within SJSU and requires @sjsu.edu email addresses for registration.
 
-For any issues or feature requests, please contact the project maintainer.
+For any issues or feature requests, please contact suryakangeyan kandasamy gowdaman (017407299).
