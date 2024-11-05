@@ -15,6 +15,7 @@ This web-based application manages and scores contestants at San Jose State Univ
 - Python 3.x
 - Flask
 - AWS DynamoDB
+- AWS EC2
 - HTML/CSS
 - JavaScript
 
