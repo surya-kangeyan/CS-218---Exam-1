@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vote for Contestant</title>
     <style>
         body {
@@ -31,7 +30,7 @@
             margin-bottom: 5px;
             font-weight: bold;
         }
-        input[type="text"] {
+        input[type="number"] {
             width: 100%;
             padding: 8px;
             margin-bottom: 15px;
@@ -46,15 +45,17 @@
             border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
+            width: 100%;
         }
         button:hover {
             background-color: #45a049;
         }
         a {
-            display: inline-block;
+            display: block;
             margin-top: 20px;
             color: #4CAF50;
             text-decoration: none;
+            text-align: center;
         }
         a:hover {
             text-decoration: underline;
@@ -68,28 +69,29 @@
     </style>
 </head>
 <body>
-    <h2 style="font-size: 24px;">Vote for Contestant: {{ performer['name'] }}</h2>
+    <h2>Vote for Contestant: {{ performer['name'] }}</h2>
 
     {% if time_left > 0 %}
     <p id="timer" data-time-left="{{ time_left }}" style="color: #4CAF50;">Time left: {{ time_left }} seconds</p>
     {% else %}
-    <p style="text-align: center; color: #f44336; font-weight: bold;">Time has expired. Your score will be 0.</p>
+    <p style="text-align: center; color: #f44336; font-weight: bold;">Time has expired. You cannot submit scores.</p>
     {% endif %}
 
-    <form method="POST" {% if time_left <= 0 %}style="display: none;"{% endif %}>
+    {% if time_left > 0 %}
+    <form method="POST">
         {% for i in range(1, 6) %}
         <div>
-            <label for="category{{ i }}" style="color: #4CAF50;">Category {{ i }}:</label>
-            <input type="text" id="category{{ i }}" name="category{{ i }}" required
-                   oninput="this.value = this.value.replace(/[^0-5]/g, '')"
-                   placeholder="Enter a score between 0 and 5"
-                   style="transition: border-color 0.3s;">
+            <label for="category_{{ i }}">Category {{ i }} (Score 0-5):</label>
+            <input type="number" id="category_{{ i }}" name="category_{{ i }}" min="0" max="5" required>
         </div>
         {% endfor %}
-        <button type="submit" style="display: block; width: 100%; margin-top: 20px; transition: background-color 0.3s;">Submit Vote</button>
+        <button type="submit">Submit Vote</button>
     </form>
+    {% else %}
+    <p style="text-align: center;">The scoring window has closed.</p>
+    {% endif %}
 
-    <a href="{{ url_for('dashboard') }}" style="display: block; text-align: center; margin-top: 20px; color: #4CAF50; text-decoration: none;">Back to Dashboard</a>
+    <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
 
     <script>
         const timerElement = document.getElementById('timer');
@@ -104,25 +106,16 @@
                     }
                 } else {
                     clearInterval(interval);
-                    timerElement.textContent = 'Time has expired. Your score will be 0.';
+                    timerElement.textContent = 'Time has expired. You cannot submit scores.';
                     timerElement.style.color = '#f44336';
-                    document.querySelector('form').style.display = 'none';
+                    // Hide the form
+                    const form = document.querySelector('form');
+                    if (form) {
+                        form.style.display = 'none';
+                    }
                 }
             }, 1000);
         }
-
-        // Add focus and blur effects to input fields
-        const inputs = document.querySelectorAll('input[type="text"]');
-        inputs.forEach(input => {
-            input.addEventListener('focus', () => {
-                input.style.borderColor = '#4CAF50';
-                input.style.boxShadow = '0 0 5px rgba(76, 175, 80, 0.5)';
-            });
-            input.addEventListener('blur', () => {
-                input.style.borderColor = '#ddd';
-                input.style.boxShadow = 'none';
-            });
-        });
     </script>
 </body>
 </html>

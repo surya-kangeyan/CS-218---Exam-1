@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <style>
+        /* ... [Your existing CSS styles] ... */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -13,8 +13,26 @@
             background-color: #f4f4f4;
         }
         h1 {
-            color: #333;
+            color: #4CAF50;
             text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        .notification, .timer-message {
+            display: none;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .notification {
+            background-color: #4CAF50;
+        }
+        .timer-message {
+            background-color: #f44336;
         }
         table {
             border-collapse: collapse;
@@ -35,22 +53,66 @@
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
+        .disabled {
+            color: #aaa;
+            text-decoration: none;
+            cursor: not-allowed;
+        }
+        /* Button Styles */
+        a.button, button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        a.button:hover, button:hover {
+            background-color: #45a049;
+        }
+        a.button.red, button.red {
+            background-color: #f44336;
+        }
+        a.button.red:hover, button.red:hover {
+            background-color: #da190b;
+        }
+        .edit-score-btn.disabled {
+            pointer-events: none;
+            background-color: #ccc;
+            color: #666;
+        }
     </style>
 </head>
 <body>
-    <h1 style="color: #4CAF50; font-size: 2.5em; margin-bottom: 30px;">Dashboard</h1>
+    <h1>
+        {% if session.get('is_admin') %} Admin Dashboard {% else %} Judge {{ session.get('judge_name', 'Unknown') }}'s Dashboard {% endif %}
+    </h1>
+
+    <div id="notification" class="notification"></div>
+    <div id="timerMessage" class="timer-message"></div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash {{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
 
     {% if session.get('is_admin') %}
-    <a href="{{ url_for('scoreboard') }}" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-bottom: 20px; transition: background-color 0.3s;">View Scoreboard</a>
+    <a href="{{ url_for('scoreboard') }}" class="button">View Scoreboard</a>
 
-    <h2 style="color: #333; margin-top: 30px;">Add New Contestant</h2>
-    <form action="{{ url_for('add_contestant') }}" method="POST" style="margin-bottom: 30px;">
+    <h2>Add New Contestant</h2>
+    <form action="{{ url_for('add_contestant') }}" method="POST" style="margin-bottom: 30px">
         <input type="text" name="performer_name" required style="padding: 10px; width: 200px; margin-right: 10px;">
-        <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; transition: background-color 0.3s;">Add Contestant</button>
+        <button type="submit">Add Contestant</button>
     </form>
     {% endif %}
 
-    <h2 style="color: #333;">Contestants</h2>
+    <h2>Contestants</h2>
     <table>
         <thead>
             <tr>
@@ -66,26 +128,43 @@
         </thead>
         <tbody>
             {% for performer in performers %}
-            <tr>
+            <tr data-performer-id="{{ performer['id'] }}" data-end-time="{{ performer.get('end_time', '') }}" data-is-performance-over="{{ performer.get('is_performance_over', False) }}">
                 <td>{{ performer['name'] }}</td>
                 <td>{{ performer['judge1_count'] }}</td>
                 <td>{{ performer['judge2_count'] }}</td>
                 <td>{{ performer['judge3_count'] }}</td>
                 <td>{{ performer['weighted_score'] }}</td>
                 <td>{{ performer['rank'] }}</td>
-                <td>
-                    {% if performer.get('time_left', 0) > 0 %}
-                    <span class="timer" data-time-left="{{ performer['time_left'] }}" style="font-weight: bold; color: #4CAF50;"></span>
+                <td class="time-left-cell" data-performer-id="{{ performer['id'] }}">
+                    {% if performer.get('time_left') == "Waiting" %}
+                        <span style="font-weight: bold; color: #ff9800;">Waiting</span>
+                    {% elif performer.get('time_left', 0) > 0 %}
+                        <span class="timer" style="font-weight: bold; color: #4CAF50;">
+                            {{ (performer['time_left'] // 60) | int }}:{{ '%02d' % ((performer['time_left'] % 60) | int) }}
+                        </span>
                     {% else %}
-                    <span style="color: #f44336;">Time expired</span>
+                        <span style="color: #f44336">Time expired</span>
                     {% endif %}
                 </td>
                 <td>
-                    <a href="{{ url_for('edit_score', performer_id=performer['id']) }}" style="color: #4CAF50; text-decoration: none; margin-right: 10px;">Edit Scores</a>
+                    {% if performer.get('is_performance_over') %}
+                        {% if performer.get('time_left', 0) > 0 %}
+                        <a href="{{ url_for('edit_score', performer_id=performer['id']) }}" class="button edit-score-btn" style="margin-right: 10px;">Edit Scores</a>
+                        {% else %}
+                        <a class="button edit-score-btn disabled" style="margin-right: 10px;">Scoring Closed</a>
+                        {% endif %}
+                    {% else %}
+                    <span class="disabled">Edit Scores</span>
+                    {% endif %}
                     {% if session.get('is_admin') %}
-                    <form action="{{ url_for('delete_contestant', performer_id=performer['id']) }}" method="POST" style="display: inline;">
-                        <button type="submit" style="background-color: #f44336; color: white; border: none; padding: 5px 10px; cursor: pointer; transition: background-color 0.3s;">Delete</button>
-                    </form>
+                        {% if not performer.get('is_performance_over') %}
+                        <form action="{{ url_for('mark_performance_complete', performer_id=performer['id']) }}" method="POST" style="display: inline">
+                            <button type="submit">Mark Performance Complete</button>
+                        </form>
+                        {% endif %}
+                        <form action="{{ url_for('delete_contestant', performer_id=performer['id']) }}" method="POST" style="display: inline">
+                            <button type="submit" class="red">Delete</button>
+                        </form>
                     {% endif %}
                 </td>
             </tr>
@@ -97,31 +176,100 @@
         </tbody>
     </table>
 
-    <a href="{{ url_for('logout') }}" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #f44336; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s;">Logout</a>
+    <a href="{{ url_for('logout') }}" class="button red">Logout</a>
 
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
     <script>
-        function formatTime(seconds) {
-            const minutes = Math.floor(seconds / 60);
-            const remainingSeconds = seconds % 60;
-            return `${minutes}:${remainingSeconds.toString().padStart(2, '0')} mins left`;
+        const socket = io.connect('http://localhost:3005'); // Update with actual server address
+        const notificationElement = document.getElementById('notification');
+
+        // Function to start timer for a performer
+        function startTimerForPerformer(performerId, endTimeStr) {
+            const endTime = new Date(endTimeStr); // endTimeStr includes timezone info
+
+            const timerInterval = setInterval(() => {
+                const now = new Date();
+                const timeLeft = Math.max(0, Math.floor((endTime.getTime() - now.getTime()) / 1000));
+
+                const row = document.querySelector(`tr[data-performer-id="${performerId}"]`);
+                const timeLeftCell = row.querySelector('.time-left-cell');
+
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    timeLeftCell.innerHTML = '<span style="color: #f44336">Time expired</span>';
+
+                    // Disable Edit Scores button
+                    const editScoreBtn = row.querySelector('.edit-score-btn');
+                    if (editScoreBtn) {
+                        editScoreBtn.classList.add('disabled');
+                        editScoreBtn.textContent = 'Scoring Closed';
+                        editScoreBtn.style.pointerEvents = 'none';
+                    }
+                } else {
+                    // Update timer display
+                    const minutes = Math.floor(timeLeft / 60);
+                    const seconds = timeLeft % 60;
+                    timeLeftCell.innerHTML = `<span style="font-weight: bold; color: #4CAF50;">${minutes}:${seconds.toString().padStart(2, '0')}</span>`;
+                }
+            }, 1000);
         }
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const timers = document.querySelectorAll('.timer');
-            timers.forEach(timer => {
-                let timeLeft = parseInt(timer.dataset.timeLeft);
-                timer.textContent = formatTime(timeLeft);
-                const interval = setInterval(() => {
-                    if (timeLeft > 0) {
-                        timeLeft--;
-                        timer.textContent = formatTime(timeLeft);
-                    } else {
-                        clearInterval(interval);
-                        timer.textContent = 'Time expired';
-                        timer.style.color = '#f44336';
-                    }
-                }, 1000);
+        // Initialize timers on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const performers = document.querySelectorAll('tr[data-performer-id]');
+
+            performers.forEach(row => {
+                const performerId = row.getAttribute('data-performer-id');
+                const isPerformanceOver = row.getAttribute('data-is-performance-over') === 'True';
+                const endTimeStr = row.getAttribute('data-end-time');
+
+                if (isPerformanceOver && endTimeStr) {
+                    startTimerForPerformer(performerId, endTimeStr);
+                } else {
+                    // Show "Waiting" for performers not yet started
+                    const timeLeftCell = row.querySelector('.time-left-cell');
+                    timeLeftCell.innerHTML = '<span style="font-weight: bold; color: #ff9800;">Waiting</span>';
+                }
             });
+        });
+
+        // Listen for 'performance_complete' event
+        socket.on('performance_complete', (data) => {
+            console.log('Performance complete event received:', data);
+            const performerId = data.performer_id;
+            const endTimeStr = data.end_time;
+
+            // Show the notification
+            notificationElement.textContent = 'Performance is complete for contestant: ' + data.performer_name;
+            notificationElement.style.display = 'block';
+            setTimeout(() => {
+                notificationElement.style.display = 'none';
+            }, 5000);
+
+            // Update the row to indicate performance has started
+            const row = document.querySelector(`tr[data-performer-id="${performerId}"]`);
+            row.setAttribute('data-is-performance-over', 'True');
+            row.setAttribute('data-end-time', endTimeStr);
+
+            // Start the timer for the specific performer
+            startTimerForPerformer(performerId, endTimeStr);
+
+            // Enable Edit Scores button for the performer
+            const editScoreBtn = row.querySelector('.edit-score-btn');
+            if (editScoreBtn) {
+                editScoreBtn.classList.remove('disabled');
+                editScoreBtn.textContent = 'Edit Scores';
+                editScoreBtn.style.pointerEvents = 'auto';
+            } else {
+                // If the button didn't exist before, add it
+                const actionsCell = row.querySelector('td:last-child');
+                const editScoresLink = document.createElement('a');
+                editScoresLink.href = `/edit_score/${performerId}`;
+                editScoresLink.className = 'button edit-score-btn';
+                editScoresLink.style.marginRight = '10px';
+                editScoresLink.textContent = 'Edit Scores';
+                actionsCell.insertBefore(editScoresLink, actionsCell.firstChild);
+            }
         });
     </script>
 </body>
