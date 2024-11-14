@@ -10,7 +10,7 @@ from flask_cors import CORS
 
 app = Flask(__name__, template_folder='pages')
 CORS(app, resources={r"/*": {"origins": "http://127.0.0.1:3005"}})  
-socketio = SocketIO(app, cors_allowed_origins="http://127.0.0.1:3005")  
+socketio = SocketIO(app, cors_allowed_origins="*")
 app.secret_key = 'skexam1'
 logging.basicConfig(
     level=logging.INFO,
@@ -91,6 +91,13 @@ def login():
 
     return render_template('login.html')
 
+@socketio.on('connect')
+def handle_connect():
+    print('Client connected')
+
+@socketio.on('disconnect')
+def handle_disconnect():
+    print('Client disconnected')
 
 @app.route('/mark_performance_complete/<performer_id>', methods=['POST'])
 def mark_performance_complete(performer_id):
@@ -100,7 +107,7 @@ def mark_performance_complete(performer_id):
 
     try:
         # Use timezone-aware datetime (UTC)
-        end_time = datetime.now(timezone.utc) + timedelta(minutes=1)
+        end_time = datetime.now(timezone.utc) + timedelta(minutes=2)  # Adjusted to 2 minutes
 
         # Update the 'is_performance_over' attribute and add 'end_time' in DynamoDB
         performers_table.update_item(
@@ -124,15 +131,72 @@ def mark_performance_complete(performer_id):
                 'end_time': end_time.isoformat(),
                 'performer_name': performer_name
             },
-            broadcast=True
-        )
 
+        )
+        print("emitting  voting started emit")
+        socketio.emit(
+            'voting_started',
+            {'performer_name': performer_name}
+        )
         flash(f'Performance marked complete for {performer_name}. Judges can now score.', 'success')
         return redirect(url_for('dashboard'))
 
     except Exception as e:
         flash(f'Error marking performance complete: {str(e)}', 'danger')
         return redirect(url_for('dashboard'))
+
+@app.route('/viewer')
+def viewer():
+    # Fetch performers from the DynamoDB table
+    performers = performers_table.scan()['Items']
+    ranked_performers = []
+
+    # Iterate over each performer to calculate scores
+    for performer in performers:
+        # Initialize score counts
+        judge1_count = judge2_count = judge3_count = Decimal(0)
+        weighted_score = Decimal(0)
+
+        # Fetch scores for the performer
+        score_response = scores_table.query(
+            KeyConditionExpression=boto3.dynamodb.conditions.Key('contestant_id').eq(performer['id'])
+        )
+
+        for score in score_response['Items']:
+            category_scores = score['category_scores']
+            total_category_score = sum(Decimal(s) for s in category_scores)
+
+            if score['judge_id'] == 'sk@sjsu.edu':
+                judge1_count = total_category_score
+                weighted_score += judge1_count * Decimal('2.0')
+            elif score['judge_id'] == 'judge2@sjsu.edu':
+                judge2_count = total_category_score
+                weighted_score += judge2_count * Decimal('0.5')
+            elif score['judge_id'] == 'judge3@sjsu.edu':
+                judge3_count = total_category_score
+                weighted_score += judge3_count * Decimal('0.5')
+
+        # Update performer with scores
+        performer.update({
+            'judge1_count': int(judge1_count),
+            'judge2_count': int(judge2_count),
+            'judge3_count': int(judge3_count),
+            'weighted_score': float(weighted_score),
+        })
+
+        ranked_performers.append(performer)
+
+    # Sort performers by weighted score in descending order
+    ranked_performers.sort(key=lambda x: x['weighted_score'], reverse=True)
+
+    # Assign ranks to performers
+    for rank, performer in enumerate(ranked_performers, start=1):
+        performer['rank'] = rank
+
+    # Render the viewer template with performers
+    return render_template('viewer.html', performers=ranked_performers)
+    # Fetch performers from the DynamoDB table
+
 
 @app.route('/dashboard')
 def dashboard():
@@ -348,6 +412,10 @@ def add_contestant():
         'is_performance_over': False  
 
     })
+    socketio.emit(
+        'performance_started',
+        {'performer_name': performer_name}
+    )
 
     logging.info(f'New contestant added: {performer_name} with ID {performer_id}')
     flash(f'Contestant "{performer_name}" added successfully! Judges have 5 minutes to enter scores.', 'success')

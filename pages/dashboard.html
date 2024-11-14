@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Dashboard</title>
     <style>
-        /* ... [Your existing CSS styles] ... */
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -17,6 +17,20 @@
             text-align: center;
             font-size: 2.5em;
             margin-bottom: 30px;
+        }
+           .notification {
+            display: none;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            background-color: #4CAF50;
+        }
+        .notification.show {
+            display: block;
         }
         .notification, .timer-message {
             display: none;
@@ -84,7 +98,7 @@
             background-color: #ccc;
             color: #666;
         }
-    </style>
+</style>
 </head>
 <body>
     <h1>
@@ -240,11 +254,13 @@
             const endTimeStr = data.end_time;
 
             // Show the notification
-            notificationElement.textContent = 'Performance is complete for contestant: ' + data.performer_name;
-            notificationElement.style.display = 'block';
+            notificationElement.textContent = 'Voting has started.';
+            notificationElement.classList.add('show');
+
+            // Hide the notification after 30 seconds
             setTimeout(() => {
-                notificationElement.style.display = 'none';
-            }, 5000);
+                notificationElement.classList.remove('show');
+            }, 30000); // 30 seconds in milliseconds
 
             // Update the row to indicate performance has started
             const row = document.querySelector(`tr[data-performer-id="${performerId}"]`);

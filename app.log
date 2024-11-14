@@ -1772,3 +1772,526 @@
 2024-11-14 14:49:03,948 - INFO - 127.0.0.1 - - [14/Nov/2024 14:49:03] "GET /socket.io/?EIO=4&transport=polling&t=PCitQQZ HTTP/1.1" 200 -
 2024-11-14 14:49:03,951 - INFO - 127.0.0.1 - - [14/Nov/2024 14:49:03] "POST /socket.io/?EIO=4&transport=polling&t=PCitQRD&sid=mxHnM80n6KdjXIZZAAAS HTTP/1.1" 200 -
 2024-11-14 14:49:03,953 - INFO - 127.0.0.1 - - [14/Nov/2024 14:49:03] "GET /socket.io/?EIO=4&transport=polling&t=PCitQRE&sid=mxHnM80n6KdjXIZZAAAS HTTP/1.1" 200 -
+2024-11-14 14:53:01,879 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 14:53:01,970 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3005
+ * Running on http://10.0.0.76:3005
+2024-11-14 14:53:01,970 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-14 14:53:01,970 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 14:53:02,227 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 14:53:02,255 - WARNING -  * Debugger is active!
+2024-11-14 14:53:02,269 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 14:53:03,954 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:03] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:53:04,074 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:04] "GET /socket.io/?EIO=4&transport=polling&t=PCiuL2Q HTTP/1.1" 200 -
+2024-11-14 14:53:04,095 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:04] "POST /socket.io/?EIO=4&transport=polling&t=PCiuL3Q&sid=mvLGrKxaaUjPjOnTAAAA HTTP/1.1" 200 -
+2024-11-14 14:53:04,096 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:04] "GET /socket.io/?EIO=4&transport=polling&t=PCiuL3Q.0&sid=mvLGrKxaaUjPjOnTAAAA HTTP/1.1" 200 -
+2024-11-14 14:53:04,107 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:04] "GET /socket.io/?EIO=4&transport=polling&t=PCiuL3Z&sid=mvLGrKxaaUjPjOnTAAAA HTTP/1.1" 200 -
+2024-11-14 14:53:04,947 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:04] "GET /socket.io/?EIO=4&transport=polling&t=PCiuLGl HTTP/1.1" 200 -
+2024-11-14 14:53:04,954 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:04] "GET /socket.io/?EIO=4&transport=polling&t=PCiuLGs&sid=5E4lnRQikv_9xTwqAAAC HTTP/1.1" 200 -
+2024-11-14 14:53:04,955 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:04] "POST /socket.io/?EIO=4&transport=polling&t=PCiuLGr&sid=5E4lnRQikv_9xTwqAAAC HTTP/1.1" 200 -
+2024-11-14 14:53:04,958 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:04] "GET /socket.io/?EIO=4&transport=polling&t=PCiuLGy&sid=5E4lnRQikv_9xTwqAAAC HTTP/1.1" 200 -
+2024-11-14 14:53:07,018 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:07] "GET /socket.io/?EIO=4&transport=websocket&sid=mvLGrKxaaUjPjOnTAAAA HTTP/1.1" 200 -
+2024-11-14 14:53:07,135 - INFO - New contestant added: fs with ID performer_20241114145307
+2024-11-14 14:53:07,136 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:07] "[32mPOST /add_contestant HTTP/1.1[0m" 302 -
+2024-11-14 14:53:07,638 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:07] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:53:07,661 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:07] "GET /socket.io/?EIO=4&transport=polling&t=PCiuLx8 HTTP/1.1" 200 -
+2024-11-14 14:53:07,693 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:07] "POST /socket.io/?EIO=4&transport=polling&t=PCiuLxg&sid=Vu8JWKUGSbOLf8fdAAAE HTTP/1.1" 200 -
+2024-11-14 14:53:07,694 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:07] "GET /socket.io/?EIO=4&transport=polling&t=PCiuLxg.0&sid=Vu8JWKUGSbOLf8fdAAAE HTTP/1.1" 200 -
+2024-11-14 14:53:07,698 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:07] "GET /socket.io/?EIO=4&transport=polling&t=PCiuLxl&sid=Vu8JWKUGSbOLf8fdAAAE HTTP/1.1" 200 -
+2024-11-14 14:53:12,810 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:12] "GET /socket.io/?EIO=4&transport=websocket&sid=5E4lnRQikv_9xTwqAAAC HTTP/1.1" 200 -
+2024-11-14 14:53:13,351 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:13] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:53:13,425 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:13] "GET /socket.io/?EIO=4&transport=polling&t=PCiuNLD HTTP/1.1" 200 -
+2024-11-14 14:53:13,467 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:13] "POST /socket.io/?EIO=4&transport=polling&t=PCiuNLu&sid=a1yFup5ApMohR_0pAAAG HTTP/1.1" 200 -
+2024-11-14 14:53:13,469 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:13] "GET /socket.io/?EIO=4&transport=polling&t=PCiuNLv&sid=a1yFup5ApMohR_0pAAAG HTTP/1.1" 200 -
+2024-11-14 14:53:13,692 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:13] "GET /socket.io/?EIO=4&transport=polling&t=PCiuNPQ&sid=a1yFup5ApMohR_0pAAAG HTTP/1.1" 200 -
+2024-11-14 14:53:15,969 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:15] "GET /socket.io/?EIO=4&transport=websocket&sid=Vu8JWKUGSbOLf8fdAAAE HTTP/1.1" 200 -
+2024-11-14 14:53:16,220 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:16] "[32mPOST /mark_performance_complete/performer_20241114145307 HTTP/1.1[0m" 302 -
+2024-11-14 14:53:16,835 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:16] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:53:16,893 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:16] "GET /socket.io/?EIO=4&transport=polling&t=PCiuOAt HTTP/1.1" 200 -
+2024-11-14 14:53:16,913 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:16] "POST /socket.io/?EIO=4&transport=polling&t=PCiuOBk&sid=3sxkvQSazpn7BtF3AAAI HTTP/1.1" 200 -
+2024-11-14 14:53:16,951 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:16] "GET /socket.io/?EIO=4&transport=polling&t=PCiuOBk.0&sid=3sxkvQSazpn7BtF3AAAI HTTP/1.1" 200 -
+2024-11-14 14:53:16,964 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:16] "GET /socket.io/?EIO=4&transport=polling&t=PCiuOCW&sid=3sxkvQSazpn7BtF3AAAI HTTP/1.1" 200 -
+2024-11-14 14:53:18,396 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:18] "GET /socket.io/?EIO=4&transport=websocket&sid=a1yFup5ApMohR_0pAAAG HTTP/1.1" 200 -
+2024-11-14 14:53:18,924 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:18] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:53:18,960 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:18] "GET /socket.io/?EIO=4&transport=polling&t=PCiuOhj HTTP/1.1" 200 -
+2024-11-14 14:53:18,980 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:18] "POST /socket.io/?EIO=4&transport=polling&t=PCiuOhx&sid=Rrp2XCbPAO02ynB9AAAK HTTP/1.1" 200 -
+2024-11-14 14:53:18,981 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:18] "GET /socket.io/?EIO=4&transport=polling&t=PCiuOhx.0&sid=Rrp2XCbPAO02ynB9AAAK HTTP/1.1" 200 -
+2024-11-14 14:53:19,127 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:19] "GET /socket.io/?EIO=4&transport=polling&t=PCiuOkL&sid=Rrp2XCbPAO02ynB9AAAK HTTP/1.1" 200 -
+2024-11-14 14:53:19,160 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:19] "GET /socket.io/?EIO=4&transport=polling&t=PCiuOkp&sid=Rrp2XCbPAO02ynB9AAAK HTTP/1.1" 200 -
+2024-11-14 14:53:20,437 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:20] "GET /socket.io/?EIO=4&transport=websocket&sid=Rrp2XCbPAO02ynB9AAAK HTTP/1.1" 200 -
+2024-11-14 14:53:20,937 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:20] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:53:20,967 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:20] "GET /socket.io/?EIO=4&transport=polling&t=PCiuPB5 HTTP/1.1" 200 -
+2024-11-14 14:53:20,989 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:20] "POST /socket.io/?EIO=4&transport=polling&t=PCiuPBJ&sid=87JPLCC89KjwLvkRAAAM HTTP/1.1" 200 -
+2024-11-14 14:53:20,990 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:20] "GET /socket.io/?EIO=4&transport=polling&t=PCiuPBK&sid=87JPLCC89KjwLvkRAAAM HTTP/1.1" 200 -
+2024-11-14 14:53:21,132 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:21] "GET /socket.io/?EIO=4&transport=polling&t=PCiuPDg&sid=87JPLCC89KjwLvkRAAAM HTTP/1.1" 200 -
+2024-11-14 14:53:21,154 - INFO - 127.0.0.1 - - [14/Nov/2024 14:53:21] "GET /socket.io/?EIO=4&transport=polling&t=PCiuPDz&sid=87JPLCC89KjwLvkRAAAM HTTP/1.1" 200 -
+2024-11-14 14:54:00,851 - INFO -  * Detected change in '/Users/suryakangeyan/Sjsu Courses/CS 218 Cloud Computing /CS-218---Exam-1/app.py', reloading
+2024-11-14 14:54:00,861 - INFO -  * Detected change in '/Users/suryakangeyan/Sjsu Courses/CS 218 Cloud Computing /CS-218---Exam-1/app.py', reloading
+2024-11-14 14:54:02,001 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 14:54:02,533 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 14:54:02,595 - WARNING -  * Debugger is active!
+2024-11-14 14:54:02,604 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 14:54:03,073 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:03] "GET /socket.io/?EIO=4&transport=polling&t=PCiuZSy HTTP/1.1" 200 -
+2024-11-14 14:54:03,079 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:03] "POST /socket.io/?EIO=4&transport=polling&t=PCiuZT4&sid=OqtFT3JXko00ErqKAAAA HTTP/1.1" 200 -
+2024-11-14 14:54:03,082 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:03] "GET /socket.io/?EIO=4&transport=polling&t=PCiuZT4.0&sid=OqtFT3JXko00ErqKAAAA HTTP/1.1" 200 -
+2024-11-14 14:54:03,084 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:03] "GET /socket.io/?EIO=4&transport=polling&t=PCiuZTA&sid=OqtFT3JXko00ErqKAAAA HTTP/1.1" 200 -
+2024-11-14 14:54:03,462 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:03] "GET /socket.io/?EIO=4&transport=polling&t=PCiuZY_ HTTP/1.1" 200 -
+2024-11-14 14:54:03,466 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:03] "POST /socket.io/?EIO=4&transport=polling&t=PCiuZZ7&sid=8LVPt6gnlVcD1SCBAAAC HTTP/1.1" 200 -
+2024-11-14 14:54:03,467 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:03] "GET /socket.io/?EIO=4&transport=polling&t=PCiuZZ8&sid=8LVPt6gnlVcD1SCBAAAC HTTP/1.1" 200 -
+2024-11-14 14:54:03,469 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:03] "GET /socket.io/?EIO=4&transport=polling&t=PCiuZZC&sid=8LVPt6gnlVcD1SCBAAAC HTTP/1.1" 200 -
+2024-11-14 14:54:41,976 - INFO -  * Detected change in '/Users/suryakangeyan/Sjsu Courses/CS 218 Cloud Computing /CS-218---Exam-1/app.py', reloading
+2024-11-14 14:54:43,093 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 14:54:43,556 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 14:54:43,633 - WARNING -  * Debugger is active!
+2024-11-14 14:54:43,641 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 14:54:44,590 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:44] "GET /socket.io/?EIO=4&transport=polling&t=PCiujbd HTTP/1.1" 200 -
+2024-11-14 14:54:44,597 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:44] "POST /socket.io/?EIO=4&transport=polling&t=PCiujbm&sid=JZ5iVCfi9r-7J6ilAAAA HTTP/1.1" 200 -
+2024-11-14 14:54:44,598 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:44] "GET /socket.io/?EIO=4&transport=polling&t=PCiujbn&sid=JZ5iVCfi9r-7J6ilAAAA HTTP/1.1" 200 -
+2024-11-14 14:54:45,067 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:45] "GET /socket.io/?EIO=4&transport=polling&t=PCiujj5 HTTP/1.1" 200 -
+2024-11-14 14:54:45,073 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:45] "POST /socket.io/?EIO=4&transport=polling&t=PCiujjE&sid=Ed1SGPygZ9LtLrF9AAAC HTTP/1.1" 200 -
+2024-11-14 14:54:45,074 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:45] "GET /socket.io/?EIO=4&transport=polling&t=PCiujjE.0&sid=Ed1SGPygZ9LtLrF9AAAC HTTP/1.1" 200 -
+2024-11-14 14:54:45,076 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:45] "GET /socket.io/?EIO=4&transport=polling&t=PCiujjJ&sid=Ed1SGPygZ9LtLrF9AAAC HTTP/1.1" 200 -
+2024-11-14 14:54:45,136 - INFO -  * Detected change in '/Users/suryakangeyan/Sjsu Courses/CS 218 Cloud Computing /CS-218---Exam-1/app.py', reloading
+2024-11-14 14:54:46,242 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 14:54:46,533 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 14:54:46,562 - WARNING -  * Debugger is active!
+2024-11-14 14:54:46,571 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 14:54:47,621 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:47] "GET /socket.io/?EIO=4&transport=polling&t=PCiukK_ HTTP/1.1" 200 -
+2024-11-14 14:54:47,628 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:47] "POST /socket.io/?EIO=4&transport=polling&t=PCiukL7&sid=OnQNH3n5yFC5zW4IAAAA HTTP/1.1" 200 -
+2024-11-14 14:54:47,629 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:47] "GET /socket.io/?EIO=4&transport=polling&t=PCiukL8&sid=OnQNH3n5yFC5zW4IAAAA HTTP/1.1" 200 -
+2024-11-14 14:54:47,633 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:47] "GET /socket.io/?EIO=4&transport=polling&t=PCiukLF&sid=OnQNH3n5yFC5zW4IAAAA HTTP/1.1" 200 -
+2024-11-14 14:54:48,065 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:48] "GET /socket.io/?EIO=4&transport=polling&t=PCiukRy HTTP/1.1" 200 -
+2024-11-14 14:54:48,072 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:48] "POST /socket.io/?EIO=4&transport=polling&t=PCiukS3&sid=6xE2LnFAtOTfCXJUAAAC HTTP/1.1" 200 -
+2024-11-14 14:54:48,074 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:48] "GET /socket.io/?EIO=4&transport=polling&t=PCiukS4&sid=6xE2LnFAtOTfCXJUAAAC HTTP/1.1" 200 -
+2024-11-14 14:54:55,048 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 14:54:55,081 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3005
+ * Running on http://10.0.0.76:3005
+2024-11-14 14:54:55,081 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-14 14:54:55,081 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 14:54:55,304 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 14:54:55,332 - WARNING -  * Debugger is active!
+2024-11-14 14:54:55,340 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 14:54:57,068 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:57] "GET /socket.io/?EIO=4&transport=polling&t=PCiumea HTTP/1.1" 200 -
+2024-11-14 14:54:57,071 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:57] "POST /socket.io/?EIO=4&transport=polling&t=PCiumej&sid=GrUrhTx_cG4oGJfvAAAA HTTP/1.1" 200 -
+2024-11-14 14:54:57,073 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:57] "GET /socket.io/?EIO=4&transport=polling&t=PCiumej.0&sid=GrUrhTx_cG4oGJfvAAAA HTTP/1.1" 200 -
+2024-11-14 14:54:57,075 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:57] "GET /socket.io/?EIO=4&transport=polling&t=PCiumen&sid=GrUrhTx_cG4oGJfvAAAA HTTP/1.1" 200 -
+2024-11-14 14:54:57,519 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:57] "GET /socket.io/?EIO=4&transport=polling&t=PCiumlf HTTP/1.1" 200 -
+2024-11-14 14:54:57,527 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:57] "POST /socket.io/?EIO=4&transport=polling&t=PCiumln&sid=rV5XqYlrSuxUecnhAAAC HTTP/1.1" 200 -
+2024-11-14 14:54:57,528 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:57] "GET /socket.io/?EIO=4&transport=polling&t=PCiumlo&sid=rV5XqYlrSuxUecnhAAAC HTTP/1.1" 200 -
+2024-11-14 14:54:58,964 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:58] "GET /socket.io/?EIO=4&transport=websocket&sid=GrUrhTx_cG4oGJfvAAAA HTTP/1.1" 200 -
+2024-11-14 14:54:59,691 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:59] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:54:59,791 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:59] "GET /socket.io/?EIO=4&transport=polling&t=PCiunJ9 HTTP/1.1" 200 -
+2024-11-14 14:54:59,845 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:59] "POST /socket.io/?EIO=4&transport=polling&t=PCiunJN&sid=i3xQlGC9YSjKdDPJAAAE HTTP/1.1" 200 -
+2024-11-14 14:54:59,846 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:59] "GET /socket.io/?EIO=4&transport=polling&t=PCiunJN.0&sid=i3xQlGC9YSjKdDPJAAAE HTTP/1.1" 200 -
+2024-11-14 14:54:59,866 - INFO - 127.0.0.1 - - [14/Nov/2024 14:54:59] "GET /socket.io/?EIO=4&transport=polling&t=PCiunK8&sid=i3xQlGC9YSjKdDPJAAAE HTTP/1.1" 200 -
+2024-11-14 14:55:02,520 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:02] "GET /socket.io/?EIO=4&transport=websocket&sid=i3xQlGC9YSjKdDPJAAAE HTTP/1.1" 200 -
+2024-11-14 14:55:02,646 - INFO - New contestant added: ghff with ID performer_20241114145502
+2024-11-14 14:55:02,648 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:02] "[32mPOST /add_contestant HTTP/1.1[0m" 302 -
+2024-11-14 14:55:03,350 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:03] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:55:03,418 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:03] "GET /socket.io/?EIO=4&transport=polling&t=PCiuoBC HTTP/1.1" 200 -
+2024-11-14 14:55:03,423 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:03] "POST /socket.io/?EIO=4&transport=polling&t=PCiuoBx&sid=nD83hoQqT21NP8TGAAAG HTTP/1.1" 200 -
+2024-11-14 14:55:03,431 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:03] "GET /socket.io/?EIO=4&transport=polling&t=PCiuoBy&sid=nD83hoQqT21NP8TGAAAG HTTP/1.1" 200 -
+2024-11-14 14:55:04,803 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:04] "GET /socket.io/?EIO=4&transport=websocket&sid=rV5XqYlrSuxUecnhAAAC HTTP/1.1" 200 -
+2024-11-14 14:55:05,433 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:05] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:55:05,501 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:05] "GET /socket.io/?EIO=4&transport=polling&t=PCiuoi6 HTTP/1.1" 200 -
+2024-11-14 14:55:05,690 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:05] "POST /socket.io/?EIO=4&transport=polling&t=PCiuolM&sid=MzWX_0HkhvY66PdJAAAI HTTP/1.1" 200 -
+2024-11-14 14:55:05,692 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:05] "GET /socket.io/?EIO=4&transport=polling&t=PCiuolN&sid=MzWX_0HkhvY66PdJAAAI HTTP/1.1" 200 -
+2024-11-14 14:55:05,712 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:05] "GET /socket.io/?EIO=4&transport=polling&t=PCiuolh&sid=MzWX_0HkhvY66PdJAAAI HTTP/1.1" 200 -
+2024-11-14 14:55:05,727 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:05] "GET /socket.io/?EIO=4&transport=polling&t=PCiuoly&sid=MzWX_0HkhvY66PdJAAAI HTTP/1.1" 200 -
+2024-11-14 14:55:18,375 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:18] "GET /socket.io/?EIO=4&transport=websocket&sid=nD83hoQqT21NP8TGAAAG HTTP/1.1" 200 -
+2024-11-14 14:55:18,577 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:18] "[32mPOST /mark_performance_complete/performer_20241114145502 HTTP/1.1[0m" 302 -
+2024-11-14 14:55:19,248 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:19] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:55:19,278 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:19] "GET /socket.io/?EIO=4&transport=polling&t=PCius3Z HTTP/1.1" 200 -
+2024-11-14 14:55:19,349 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:19] "POST /socket.io/?EIO=4&transport=polling&t=PCius4g&sid=PnhABJ463IZNRpfiAAAK HTTP/1.1" 200 -
+2024-11-14 14:55:19,350 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:19] "GET /socket.io/?EIO=4&transport=polling&t=PCius4g.0&sid=PnhABJ463IZNRpfiAAAK HTTP/1.1" 200 -
+2024-11-14 14:55:19,359 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:19] "GET /socket.io/?EIO=4&transport=polling&t=PCius4w&sid=PnhABJ463IZNRpfiAAAK HTTP/1.1" 200 -
+2024-11-14 14:55:20,976 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:20] "GET /socket.io/?EIO=4&transport=websocket&sid=MzWX_0HkhvY66PdJAAAI HTTP/1.1" 200 -
+2024-11-14 14:55:21,701 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:21] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:55:21,732 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:21] "GET /socket.io/?EIO=4&transport=polling&t=PCiusg2 HTTP/1.1" 200 -
+2024-11-14 14:55:21,751 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:21] "POST /socket.io/?EIO=4&transport=polling&t=PCiusgD&sid=MWQCpO7LHj_tmkkgAAAM HTTP/1.1" 200 -
+2024-11-14 14:55:21,751 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:21] "GET /socket.io/?EIO=4&transport=polling&t=PCiusgE&sid=MWQCpO7LHj_tmkkgAAAM HTTP/1.1" 200 -
+2024-11-14 14:55:21,897 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:21] "GET /socket.io/?EIO=4&transport=polling&t=PCiusid&sid=MWQCpO7LHj_tmkkgAAAM HTTP/1.1" 200 -
+2024-11-14 14:55:21,918 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:21] "GET /socket.io/?EIO=4&transport=polling&t=PCiusiv&sid=MWQCpO7LHj_tmkkgAAAM HTTP/1.1" 200 -
+2024-11-14 14:55:22,398 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:22] "GET /socket.io/?EIO=4&transport=websocket&sid=MWQCpO7LHj_tmkkgAAAM HTTP/1.1" 200 -
+2024-11-14 14:55:23,110 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:23] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:55:23,134 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:23] "GET /socket.io/?EIO=4&transport=polling&t=PCius_x HTTP/1.1" 200 -
+2024-11-14 14:55:23,322 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:23] "POST /socket.io/?EIO=4&transport=polling&t=PCiut2r&sid=FRdSnXitUi_uylQ3AAAO HTTP/1.1" 200 -
+2024-11-14 14:55:23,322 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:23] "GET /socket.io/?EIO=4&transport=polling&t=PCiut2s&sid=FRdSnXitUi_uylQ3AAAO HTTP/1.1" 200 -
+2024-11-14 14:55:23,348 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:23] "GET /socket.io/?EIO=4&transport=polling&t=PCiut39&sid=FRdSnXitUi_uylQ3AAAO HTTP/1.1" 200 -
+2024-11-14 14:55:23,357 - INFO - 127.0.0.1 - - [14/Nov/2024 14:55:23] "GET /socket.io/?EIO=4&transport=polling&t=PCiut3Q&sid=FRdSnXitUi_uylQ3AAAO HTTP/1.1" 200 -
+2024-11-14 14:58:48,258 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:48] "GET /socket.io/?EIO=4&transport=websocket&sid=PnhABJ463IZNRpfiAAAK HTTP/1.1" 200 -
+2024-11-14 14:58:48,278 - INFO - deleting contestant 
+2024-11-14 14:58:48,278 - INFO - Attempting to delete contestant: performer_20241114145307
+2024-11-14 14:58:48,706 - INFO - Successfully deleted contestant: performer_20241114145307
+2024-11-14 14:58:48,708 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:48] "[32mPOST /delete_contestant/performer_20241114145307 HTTP/1.1[0m" 302 -
+2024-11-14 14:58:49,085 - INFO - deleting contestant 
+2024-11-14 14:58:49,085 - INFO - Attempting to delete contestant: performer_20241114145502
+2024-11-14 14:58:49,248 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:49] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:58:49,509 - INFO - Successfully deleted contestant: performer_20241114145502
+2024-11-14 14:58:49,509 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:49] "[32mPOST /delete_contestant/performer_20241114145502 HTTP/1.1[0m" 302 -
+2024-11-14 14:58:49,819 - INFO - deleting contestant 
+2024-11-14 14:58:49,819 - INFO - Attempting to delete contestant: performer_20241114144749
+2024-11-14 14:58:49,856 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:49] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:58:50,077 - INFO - Successfully deleted contestant: performer_20241114144749
+2024-11-14 14:58:50,078 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:50] "[32mPOST /delete_contestant/performer_20241114144749 HTTP/1.1[0m" 302 -
+2024-11-14 14:58:50,190 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:50] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:58:50,297 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:50] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:58:50,407 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:50] "GET /socket.io/?EIO=4&transport=polling&t=PCivfcW HTTP/1.1" 200 -
+2024-11-14 14:58:50,454 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:50] "POST /socket.io/?EIO=4&transport=polling&t=PCivfd7&sid=6l87LC5V1skyUSM2AAAQ HTTP/1.1" 200 -
+2024-11-14 14:58:50,455 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:50] "GET /socket.io/?EIO=4&transport=polling&t=PCivfd8&sid=6l87LC5V1skyUSM2AAAQ HTTP/1.1" 200 -
+2024-11-14 14:58:50,475 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:50] "GET /socket.io/?EIO=4&transport=polling&t=PCivfdV&sid=6l87LC5V1skyUSM2AAAQ HTTP/1.1" 200 -
+2024-11-14 14:58:53,826 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:53] "GET /socket.io/?EIO=4&transport=websocket&sid=6l87LC5V1skyUSM2AAAQ HTTP/1.1" 200 -
+2024-11-14 14:58:53,980 - INFO - New contestant added: khamalesh  with ID performer_20241114145853
+2024-11-14 14:58:53,982 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:53] "[32mPOST /add_contestant HTTP/1.1[0m" 302 -
+2024-11-14 14:58:54,263 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:54] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:58:54,321 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:54] "GET /socket.io/?EIO=4&transport=polling&t=PCivgZG HTTP/1.1" 200 -
+2024-11-14 14:58:54,326 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:54] "POST /socket.io/?EIO=4&transport=polling&t=PCivgZp&sid=ia0YM1ao3KT59lC_AAAS HTTP/1.1" 200 -
+2024-11-14 14:58:54,326 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:54] "GET /socket.io/?EIO=4&transport=polling&t=PCivgZp.0&sid=ia0YM1ao3KT59lC_AAAS HTTP/1.1" 200 -
+2024-11-14 14:58:55,836 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:55] "GET /socket.io/?EIO=4&transport=websocket&sid=ia0YM1ao3KT59lC_AAAS HTTP/1.1" 200 -
+2024-11-14 14:58:56,054 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:56] "[32mPOST /mark_performance_complete/performer_20241114145853 HTTP/1.1[0m" 302 -
+2024-11-14 14:58:56,347 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:56] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:58:56,406 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:56] "GET /socket.io/?EIO=4&transport=polling&t=PCivh3h HTTP/1.1" 200 -
+2024-11-14 14:58:56,414 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:56] "POST /socket.io/?EIO=4&transport=polling&t=PCivh4P&sid=k_hgQNH1WO3RIHLHAAAU HTTP/1.1" 200 -
+2024-11-14 14:58:56,416 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:56] "GET /socket.io/?EIO=4&transport=polling&t=PCivh4P.0&sid=k_hgQNH1WO3RIHLHAAAU HTTP/1.1" 200 -
+2024-11-14 14:58:56,473 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:56] "GET /socket.io/?EIO=4&transport=polling&t=PCivh5L&sid=k_hgQNH1WO3RIHLHAAAU HTTP/1.1" 200 -
+2024-11-14 14:58:59,032 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:59] "GET /socket.io/?EIO=4&transport=websocket&sid=FRdSnXitUi_uylQ3AAAO HTTP/1.1" 200 -
+2024-11-14 14:58:59,365 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:59] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:58:59,439 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:59] "GET /socket.io/?EIO=4&transport=polling&t=PCivhpi HTTP/1.1" 200 -
+2024-11-14 14:58:59,483 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:59] "POST /socket.io/?EIO=4&transport=polling&t=PCivhqP&sid=1K2LIImtytP0rT9NAAAW HTTP/1.1" 200 -
+2024-11-14 14:58:59,484 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:59] "GET /socket.io/?EIO=4&transport=polling&t=PCivhqP.0&sid=1K2LIImtytP0rT9NAAAW HTTP/1.1" 200 -
+2024-11-14 14:58:59,720 - INFO - 127.0.0.1 - - [14/Nov/2024 14:58:59] "GET /socket.io/?EIO=4&transport=polling&t=PCivhu6&sid=1K2LIImtytP0rT9NAAAW HTTP/1.1" 200 -
+2024-11-14 14:59:00,468 - INFO - 127.0.0.1 - - [14/Nov/2024 14:59:00] "GET /socket.io/?EIO=4&transport=websocket&sid=1K2LIImtytP0rT9NAAAW HTTP/1.1" 200 -
+2024-11-14 14:59:00,758 - INFO - 127.0.0.1 - - [14/Nov/2024 14:59:00] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:59:00,793 - INFO - 127.0.0.1 - - [14/Nov/2024 14:59:00] "GET /socket.io/?EIO=4&transport=polling&t=PCivi8s HTTP/1.1" 200 -
+2024-11-14 14:59:00,958 - INFO - 127.0.0.1 - - [14/Nov/2024 14:59:00] "POST /socket.io/?EIO=4&transport=polling&t=PCiviBR&sid=XloIhoh0biUurQBKAAAY HTTP/1.1" 200 -
+2024-11-14 14:59:00,960 - INFO - 127.0.0.1 - - [14/Nov/2024 14:59:00] "GET /socket.io/?EIO=4&transport=polling&t=PCiviBS&sid=XloIhoh0biUurQBKAAAY HTTP/1.1" 200 -
+2024-11-14 14:59:00,989 - INFO - 127.0.0.1 - - [14/Nov/2024 14:59:00] "GET /socket.io/?EIO=4&transport=polling&t=PCiviBv&sid=XloIhoh0biUurQBKAAAY HTTP/1.1" 200 -
+2024-11-14 14:59:01,002 - INFO - 127.0.0.1 - - [14/Nov/2024 14:59:01] "GET /socket.io/?EIO=4&transport=polling&t=PCiviC8&sid=XloIhoh0biUurQBKAAAY HTTP/1.1" 200 -
+2024-11-14 14:59:02,152 - INFO - 127.0.0.1 - - [14/Nov/2024 14:59:02] "GET /socket.io/?EIO=4&transport=websocket&sid=k_hgQNH1WO3RIHLHAAAU HTTP/1.1" 200 -
+2024-11-14 14:59:02,508 - INFO - 127.0.0.1 - - [14/Nov/2024 14:59:02] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 14:59:02,570 - INFO - 127.0.0.1 - - [14/Nov/2024 14:59:02] "GET /socket.io/?EIO=4&transport=polling&t=PCiviZv HTTP/1.1" 200 -
+2024-11-14 14:59:02,706 - INFO - 127.0.0.1 - - [14/Nov/2024 14:59:02] "POST /socket.io/?EIO=4&transport=polling&t=PCivibx&sid=nVPIxpQ_9WDDaCcTAAAa HTTP/1.1" 200 -
+2024-11-14 14:59:02,722 - INFO - 127.0.0.1 - - [14/Nov/2024 14:59:02] "GET /socket.io/?EIO=4&transport=polling&t=PCivibx.0&sid=nVPIxpQ_9WDDaCcTAAAa HTTP/1.1" 200 -
+2024-11-14 14:59:02,862 - INFO - 127.0.0.1 - - [14/Nov/2024 14:59:02] "GET /socket.io/?EIO=4&transport=polling&t=PCividP&sid=nVPIxpQ_9WDDaCcTAAAa HTTP/1.1" 200 -
+2024-11-14 15:01:59,486 - INFO -  * Detected change in '/Users/suryakangeyan/Sjsu Courses/CS 218 Cloud Computing /CS-218---Exam-1/app.py', reloading
+2024-11-14 15:01:59,494 - INFO -  * Detected change in '/Users/suryakangeyan/Sjsu Courses/CS 218 Cloud Computing /CS-218---Exam-1/app.py', reloading
+2024-11-14 15:02:00,598 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 15:02:01,107 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 15:02:01,185 - WARNING -  * Debugger is active!
+2024-11-14 15:02:01,195 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 15:02:02,063 - INFO - 127.0.0.1 - - [14/Nov/2024 15:02:02] "GET /socket.io/?EIO=4&transport=polling&t=PCiwOP5 HTTP/1.1" 200 -
+2024-11-14 15:02:02,077 - INFO - 127.0.0.1 - - [14/Nov/2024 15:02:02] "POST /socket.io/?EIO=4&transport=polling&t=PCiwOPI&sid=CkM0zTBzEPvXlqjqAAAA HTTP/1.1" 200 -
+2024-11-14 15:02:02,079 - INFO - 127.0.0.1 - - [14/Nov/2024 15:02:02] "GET /socket.io/?EIO=4&transport=polling&t=PCiwOPK&sid=CkM0zTBzEPvXlqjqAAAA HTTP/1.1" 200 -
+2024-11-14 15:02:02,082 - INFO - 127.0.0.1 - - [14/Nov/2024 15:02:02] "GET /socket.io/?EIO=4&transport=polling&t=PCiwOPH HTTP/1.1" 200 -
+2024-11-14 15:02:02,085 - INFO - 127.0.0.1 - - [14/Nov/2024 15:02:02] "GET /socket.io/?EIO=4&transport=polling&t=PCiwOPX&sid=CkM0zTBzEPvXlqjqAAAA HTTP/1.1" 200 -
+2024-11-14 15:02:02,094 - INFO - 127.0.0.1 - - [14/Nov/2024 15:02:02] "POST /socket.io/?EIO=4&transport=polling&t=PCiwOPf&sid=zXSYVVXdXdGRPKpFAAAC HTTP/1.1" 200 -
+2024-11-14 15:02:02,096 - INFO - 127.0.0.1 - - [14/Nov/2024 15:02:02] "GET /socket.io/?EIO=4&transport=polling&t=PCiwOPi&sid=zXSYVVXdXdGRPKpFAAAC HTTP/1.1" 200 -
+2024-11-14 15:02:02,100 - INFO - 127.0.0.1 - - [14/Nov/2024 15:02:02] "GET /socket.io/?EIO=4&transport=polling&t=PCiwOPo&sid=zXSYVVXdXdGRPKpFAAAC HTTP/1.1" 200 -
+2024-11-14 15:03:32,652 - INFO -  * Detected change in '/Users/suryakangeyan/Sjsu Courses/CS 218 Cloud Computing /CS-218---Exam-1/app.py', reloading
+2024-11-14 15:03:33,752 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 15:05:34,662 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 15:05:34,715 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3005
+ * Running on http://10.0.0.76:3005
+2024-11-14 15:05:34,715 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-14 15:05:34,715 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 15:05:34,977 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 15:05:35,006 - WARNING -  * Debugger is active!
+2024-11-14 15:05:35,017 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 15:05:36,077 - INFO - 127.0.0.1 - - [14/Nov/2024 15:05:36] "GET /socket.io/?EIO=4&transport=polling&t=PCixCf3 HTTP/1.1" 200 -
+2024-11-14 15:05:36,088 - INFO - 127.0.0.1 - - [14/Nov/2024 15:05:36] "POST /socket.io/?EIO=4&transport=polling&t=PCixCfG&sid=jnhxEXSV9YkQSoNxAAAA HTTP/1.1" 200 -
+2024-11-14 15:05:36,090 - INFO - 127.0.0.1 - - [14/Nov/2024 15:05:36] "GET /socket.io/?EIO=4&transport=polling&t=PCixCfH&sid=jnhxEXSV9YkQSoNxAAAA HTTP/1.1" 200 -
+2024-11-14 15:05:36,098 - INFO - 127.0.0.1 - - [14/Nov/2024 15:05:36] "GET /socket.io/?EIO=4&transport=polling&t=PCixCfT&sid=jnhxEXSV9YkQSoNxAAAA HTTP/1.1" 200 -
+2024-11-14 15:05:37,673 - INFO - 127.0.0.1 - - [14/Nov/2024 15:05:37] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:05:37,748 - INFO - 127.0.0.1 - - [14/Nov/2024 15:05:37] "GET /socket.io/?EIO=4&transport=polling&t=PCixD3I HTTP/1.1" 200 -
+2024-11-14 15:05:37,763 - INFO - 127.0.0.1 - - [14/Nov/2024 15:05:37] "POST /socket.io/?EIO=4&transport=polling&t=PCixD3X&sid=cflaEo6qV_BvPK_fAAAC HTTP/1.1" 200 -
+2024-11-14 15:05:37,765 - INFO - 127.0.0.1 - - [14/Nov/2024 15:05:37] "GET /socket.io/?EIO=4&transport=polling&t=PCixD3X.0&sid=cflaEo6qV_BvPK_fAAAC HTTP/1.1" 200 -
+2024-11-14 15:05:37,839 - INFO - 127.0.0.1 - - [14/Nov/2024 15:05:37] "GET /socket.io/?EIO=4&transport=polling&t=PCixD4j&sid=cflaEo6qV_BvPK_fAAAC HTTP/1.1" 200 -
+2024-11-14 15:05:38,411 - INFO - 127.0.0.1 - - [14/Nov/2024 15:05:38] "GET /viewer HTTP/1.1" 200 -
+2024-11-14 15:05:38,459 - INFO - 127.0.0.1 - - [14/Nov/2024 15:05:38] "GET /socket.io/?EIO=4&transport=polling&t=PCixDEN HTTP/1.1" 200 -
+2024-11-14 15:05:38,476 - INFO - 127.0.0.1 - - [14/Nov/2024 15:05:38] "POST /socket.io/?EIO=4&transport=polling&t=PCixDEa&sid=eXLi3pzjVlB09UcBAAAE HTTP/1.1" 200 -
+2024-11-14 15:05:38,477 - INFO - 127.0.0.1 - - [14/Nov/2024 15:05:38] "GET /socket.io/?EIO=4&transport=polling&t=PCixDEa.0&sid=eXLi3pzjVlB09UcBAAAE HTTP/1.1" 200 -
+2024-11-14 15:05:38,545 - INFO - 127.0.0.1 - - [14/Nov/2024 15:05:38] "GET /socket.io/?EIO=4&transport=polling&t=PCixDFl&sid=eXLi3pzjVlB09UcBAAAE HTTP/1.1" 200 -
+2024-11-14 15:06:08,872 - INFO - 127.0.0.1 - - [14/Nov/2024 15:06:08] "GET /socket.io/?EIO=4&transport=websocket&sid=jnhxEXSV9YkQSoNxAAAA HTTP/1.1" 200 -
+2024-11-14 15:06:09,213 - INFO - 127.0.0.1 - - [14/Nov/2024 15:06:09] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:06:09,272 - INFO - 127.0.0.1 - - [14/Nov/2024 15:06:09] "GET /socket.io/?EIO=4&transport=polling&t=PCixKlm HTTP/1.1" 200 -
+2024-11-14 15:06:09,326 - INFO - 127.0.0.1 - - [14/Nov/2024 15:06:09] "POST /socket.io/?EIO=4&transport=polling&t=PCixKmO&sid=OzAX4kdABvyq6HWAAAAG HTTP/1.1" 200 -
+2024-11-14 15:06:09,327 - INFO - 127.0.0.1 - - [14/Nov/2024 15:06:09] "GET /socket.io/?EIO=4&transport=polling&t=PCixKmO.0&sid=OzAX4kdABvyq6HWAAAAG HTTP/1.1" 200 -
+2024-11-14 15:06:11,893 - INFO - 127.0.0.1 - - [14/Nov/2024 15:06:11] "GET /socket.io/?EIO=4&transport=websocket&sid=eXLi3pzjVlB09UcBAAAE HTTP/1.1" 200 -
+2024-11-14 15:06:11,997 - INFO - 127.0.0.1 - - [14/Nov/2024 15:06:11] "GET /viewer HTTP/1.1" 200 -
+2024-11-14 15:06:12,032 - INFO - 127.0.0.1 - - [14/Nov/2024 15:06:12] "GET /socket.io/?EIO=4&transport=polling&t=PCixLQz HTTP/1.1" 200 -
+2024-11-14 15:06:12,214 - INFO - 127.0.0.1 - - [14/Nov/2024 15:06:12] "POST /socket.io/?EIO=4&transport=polling&t=PCixLTo&sid=DujjDKJwDvq5xribAAAI HTTP/1.1" 200 -
+2024-11-14 15:06:12,216 - INFO - 127.0.0.1 - - [14/Nov/2024 15:06:12] "GET /socket.io/?EIO=4&transport=polling&t=PCixLTo.0&sid=DujjDKJwDvq5xribAAAI HTTP/1.1" 200 -
+2024-11-14 15:06:12,239 - INFO - 127.0.0.1 - - [14/Nov/2024 15:06:12] "GET /socket.io/?EIO=4&transport=polling&t=PCixLU8&sid=DujjDKJwDvq5xribAAAI HTTP/1.1" 200 -
+2024-11-14 15:06:12,252 - INFO - 127.0.0.1 - - [14/Nov/2024 15:06:12] "GET /socket.io/?EIO=4&transport=polling&t=PCixLUQ&sid=DujjDKJwDvq5xribAAAI HTTP/1.1" 200 -
+2024-11-14 15:07:53,497 - INFO -  * Detected change in '/Users/suryakangeyan/Sjsu Courses/CS 218 Cloud Computing /CS-218---Exam-1/app.py', reloading
+2024-11-14 15:07:54,589 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 15:07:55,191 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 15:07:55,243 - WARNING -  * Debugger is active!
+2024-11-14 15:07:55,252 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 15:07:55,351 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:55] "GET /socket.io/?EIO=4&transport=polling&t=PCixkfF HTTP/1.1" 200 -
+2024-11-14 15:07:55,356 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:55] "POST /socket.io/?EIO=4&transport=polling&t=PCixkfO&sid=4g8eeGqN4LmUViVxAAAA HTTP/1.1" 200 -
+2024-11-14 15:07:55,357 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:55] "GET /socket.io/?EIO=4&transport=polling&t=PCixkfP&sid=4g8eeGqN4LmUViVxAAAA HTTP/1.1" 200 -
+2024-11-14 15:07:55,359 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:55] "GET /socket.io/?EIO=4&transport=polling&t=PCixkfU&sid=4g8eeGqN4LmUViVxAAAA HTTP/1.1" 200 -
+2024-11-14 15:07:55,567 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:55] "GET /socket.io/?EIO=4&transport=polling&t=PCixkih HTTP/1.1" 200 -
+2024-11-14 15:07:55,574 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:55] "POST /socket.io/?EIO=4&transport=polling&t=PCixkim&sid=ru07jK_1n7SSRUPXAAAC HTTP/1.1" 200 -
+2024-11-14 15:07:55,575 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:55] "GET /socket.io/?EIO=4&transport=polling&t=PCixkin&sid=ru07jK_1n7SSRUPXAAAC HTTP/1.1" 200 -
+2024-11-14 15:07:56,073 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:56] "GET /socket.io/?EIO=4&transport=polling&t=PCixkqa HTTP/1.1" 200 -
+2024-11-14 15:07:56,078 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:56] "POST /socket.io/?EIO=4&transport=polling&t=PCixkqg&sid=lNcBYAlVfXDuIIQvAAAE HTTP/1.1" 200 -
+2024-11-14 15:07:56,079 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:56] "GET /socket.io/?EIO=4&transport=polling&t=PCixkqg.0&sid=lNcBYAlVfXDuIIQvAAAE HTTP/1.1" 200 -
+2024-11-14 15:07:56,081 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:56] "GET /socket.io/?EIO=4&transport=polling&t=PCixkqm&sid=lNcBYAlVfXDuIIQvAAAE HTTP/1.1" 200 -
+2024-11-14 15:07:58,031 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:58] "GET /socket.io/?EIO=4&transport=websocket&sid=ru07jK_1n7SSRUPXAAAC HTTP/1.1" 200 -
+2024-11-14 15:07:58,459 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:58] "GET /viewer HTTP/1.1" 200 -
+2024-11-14 15:07:58,503 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:58] "GET /socket.io/?EIO=4&transport=polling&t=PCixlQM HTTP/1.1" 200 -
+2024-11-14 15:07:58,512 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:58] "POST /socket.io/?EIO=4&transport=polling&t=PCixlQj&sid=S-QbJO2LGRgn_YqyAAAG HTTP/1.1" 200 -
+2024-11-14 15:07:58,513 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:58] "GET /socket.io/?EIO=4&transport=polling&t=PCixlQk&sid=S-QbJO2LGRgn_YqyAAAG HTTP/1.1" 200 -
+2024-11-14 15:07:58,720 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:58] "GET /socket.io/?EIO=4&transport=polling&t=PCixlT-&sid=S-QbJO2LGRgn_YqyAAAG HTTP/1.1" 200 -
+2024-11-14 15:07:58,752 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:58] "GET /socket.io/?EIO=4&transport=polling&t=PCixlUK&sid=S-QbJO2LGRgn_YqyAAAG HTTP/1.1" 200 -
+2024-11-14 15:07:58,788 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:58] "GET /socket.io/?EIO=4&transport=websocket&sid=S-QbJO2LGRgn_YqyAAAG HTTP/1.1" 200 -
+2024-11-14 15:07:58,965 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:58] "GET /viewer HTTP/1.1" 200 -
+2024-11-14 15:07:58,983 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:58] "GET /socket.io/?EIO=4&transport=polling&t=PCixlY5 HTTP/1.1" 200 -
+2024-11-14 15:07:59,143 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:59] "GET /socket.io/?EIO=4&transport=polling&t=PCixlaX.0&sid=sorFs_gLZX1nBW7lAAAI HTTP/1.1" 200 -
+2024-11-14 15:07:59,143 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:59] "POST /socket.io/?EIO=4&transport=polling&t=PCixlaX&sid=sorFs_gLZX1nBW7lAAAI HTTP/1.1" 200 -
+2024-11-14 15:07:59,165 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:59] "GET /socket.io/?EIO=4&transport=polling&t=PCixlav&sid=sorFs_gLZX1nBW7lAAAI HTTP/1.1" 200 -
+2024-11-14 15:07:59,178 - INFO - 127.0.0.1 - - [14/Nov/2024 15:07:59] "GET /socket.io/?EIO=4&transport=polling&t=PCixlb8&sid=sorFs_gLZX1nBW7lAAAI HTTP/1.1" 200 -
+2024-11-14 15:08:07,081 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:07] "GET /socket.io/?EIO=4&transport=websocket&sid=lNcBYAlVfXDuIIQvAAAE HTTP/1.1" 200 -
+2024-11-14 15:08:07,192 - INFO - New contestant added: jes with ID performer_20241114150807
+2024-11-14 15:08:07,193 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:07] "[32mPOST /add_contestant HTTP/1.1[0m" 302 -
+2024-11-14 15:08:07,702 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:07] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:08:07,745 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:07] "GET /socket.io/?EIO=4&transport=polling&t=PCixng- HTTP/1.1" 200 -
+2024-11-14 15:08:07,792 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:07] "POST /socket.io/?EIO=4&transport=polling&t=PCixnhD&sid=EM2yqnrrX396E9TWAAAK HTTP/1.1" 200 -
+2024-11-14 15:08:07,794 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:07] "GET /socket.io/?EIO=4&transport=polling&t=PCixnhE&sid=EM2yqnrrX396E9TWAAAK HTTP/1.1" 200 -
+2024-11-14 15:08:16,670 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:16] "GET /socket.io/?EIO=4&transport=websocket&sid=EM2yqnrrX396E9TWAAAK HTTP/1.1" 200 -
+2024-11-14 15:08:16,948 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:16] "[32mPOST /mark_performance_complete/performer_20241114150807 HTTP/1.1[0m" 302 -
+2024-11-14 15:08:17,471 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:17] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:08:17,538 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:17] "GET /socket.io/?EIO=4&transport=polling&t=PCixq3H HTTP/1.1" 200 -
+2024-11-14 15:08:17,589 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:17] "POST /socket.io/?EIO=4&transport=polling&t=PCixq4n&sid=BanzEaBKHz_P7HSbAAAM HTTP/1.1" 200 -
+2024-11-14 15:08:17,592 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:17] "GET /socket.io/?EIO=4&transport=polling&t=PCixq4n.0&sid=BanzEaBKHz_P7HSbAAAM HTTP/1.1" 200 -
+2024-11-14 15:08:18,764 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:18] "GET /socket.io/?EIO=4&transport=websocket&sid=sorFs_gLZX1nBW7lAAAI HTTP/1.1" 200 -
+2024-11-14 15:08:19,044 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:19] "GET /viewer HTTP/1.1" 200 -
+2024-11-14 15:08:19,075 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:19] "GET /socket.io/?EIO=4&transport=polling&t=PCixqR_ HTTP/1.1" 200 -
+2024-11-14 15:08:19,094 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:19] "POST /socket.io/?EIO=4&transport=polling&t=PCixqSE&sid=7wjI8u2fcduFVhUhAAAO HTTP/1.1" 200 -
+2024-11-14 15:08:19,094 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:19] "GET /socket.io/?EIO=4&transport=polling&t=PCixqSE.0&sid=7wjI8u2fcduFVhUhAAAO HTTP/1.1" 200 -
+2024-11-14 15:08:19,242 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:19] "GET /socket.io/?EIO=4&transport=polling&t=PCixqUe&sid=7wjI8u2fcduFVhUhAAAO HTTP/1.1" 200 -
+2024-11-14 15:08:19,277 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:19] "GET /socket.io/?EIO=4&transport=polling&t=PCixqV0&sid=7wjI8u2fcduFVhUhAAAO HTTP/1.1" 200 -
+2024-11-14 15:08:19,975 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:19] "GET /socket.io/?EIO=4&transport=websocket&sid=4g8eeGqN4LmUViVxAAAA HTTP/1.1" 200 -
+2024-11-14 15:08:20,454 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:20] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:08:20,505 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:20] "GET /socket.io/?EIO=4&transport=polling&t=PCixqo8 HTTP/1.1" 200 -
+2024-11-14 15:08:20,511 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:20] "POST /socket.io/?EIO=4&transport=polling&t=PCixqoS&sid=ws2g2zzw46-igfXgAAAQ HTTP/1.1" 200 -
+2024-11-14 15:08:20,511 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:20] "GET /socket.io/?EIO=4&transport=polling&t=PCixqoT&sid=ws2g2zzw46-igfXgAAAQ HTTP/1.1" 200 -
+2024-11-14 15:08:20,673 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:20] "GET /socket.io/?EIO=4&transport=polling&t=PCixqq_&sid=ws2g2zzw46-igfXgAAAQ HTTP/1.1" 200 -
+2024-11-14 15:08:20,706 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:20] "GET /socket.io/?EIO=4&transport=polling&t=PCixqrS&sid=ws2g2zzw46-igfXgAAAQ HTTP/1.1" 200 -
+2024-11-14 15:08:23,360 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:23] "GET /socket.io/?EIO=4&transport=websocket&sid=BanzEaBKHz_P7HSbAAAM HTTP/1.1" 200 -
+2024-11-14 15:08:23,464 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:23] "GET /edit_score/performer_20241114150807 HTTP/1.1" 200 -
+2024-11-14 15:08:30,152 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:30] "[32mPOST /edit_score/performer_20241114150807 HTTP/1.1[0m" 302 -
+2024-11-14 15:08:30,688 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:30] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:08:30,744 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:30] "GET /socket.io/?EIO=4&transport=polling&t=PCixtHj HTTP/1.1" 200 -
+2024-11-14 15:08:30,823 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:30] "POST /socket.io/?EIO=4&transport=polling&t=PCixtJZ&sid=15svaCq7NqLqXLn7AAAS HTTP/1.1" 200 -
+2024-11-14 15:08:30,824 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:30] "GET /socket.io/?EIO=4&transport=polling&t=PCixtJZ.0&sid=15svaCq7NqLqXLn7AAAS HTTP/1.1" 200 -
+2024-11-14 15:08:32,639 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:32] "GET /socket.io/?EIO=4&transport=websocket&sid=7wjI8u2fcduFVhUhAAAO HTTP/1.1" 200 -
+2024-11-14 15:08:32,931 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:32] "GET /viewer HTTP/1.1" 200 -
+2024-11-14 15:08:32,979 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:32] "GET /socket.io/?EIO=4&transport=polling&t=PCixtrF HTTP/1.1" 200 -
+2024-11-14 15:08:33,007 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:33] "POST /socket.io/?EIO=4&transport=polling&t=PCixtrc&sid=J8bzdmnnT1ulb4JaAAAU HTTP/1.1" 200 -
+2024-11-14 15:08:33,008 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:33] "GET /socket.io/?EIO=4&transport=polling&t=PCixtrc.0&sid=J8bzdmnnT1ulb4JaAAAU HTTP/1.1" 200 -
+2024-11-14 15:08:33,177 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:33] "GET /socket.io/?EIO=4&transport=polling&t=PCixtuO&sid=J8bzdmnnT1ulb4JaAAAU HTTP/1.1" 200 -
+2024-11-14 15:08:33,206 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:33] "GET /socket.io/?EIO=4&transport=polling&t=PCixtun&sid=J8bzdmnnT1ulb4JaAAAU HTTP/1.1" 200 -
+2024-11-14 15:08:33,790 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:33] "GET /socket.io/?EIO=4&transport=websocket&sid=ws2g2zzw46-igfXgAAAQ HTTP/1.1" 200 -
+2024-11-14 15:08:34,339 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:34] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:08:34,373 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:34] "GET /socket.io/?EIO=4&transport=polling&t=PCixuB2 HTTP/1.1" 200 -
+2024-11-14 15:08:34,542 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:34] "POST /socket.io/?EIO=4&transport=polling&t=PCixuDi&sid=bvRC6Agkf5o3GV1FAAAW HTTP/1.1" 200 -
+2024-11-14 15:08:34,544 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:34] "GET /socket.io/?EIO=4&transport=polling&t=PCixuDi.0&sid=bvRC6Agkf5o3GV1FAAAW HTTP/1.1" 200 -
+2024-11-14 15:08:34,573 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:34] "GET /socket.io/?EIO=4&transport=polling&t=PCixuE5&sid=bvRC6Agkf5o3GV1FAAAW HTTP/1.1" 200 -
+2024-11-14 15:08:34,607 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:34] "GET /socket.io/?EIO=4&transport=polling&t=PCixuEi&sid=bvRC6Agkf5o3GV1FAAAW HTTP/1.1" 200 -
+2024-11-14 15:08:57,049 - INFO -  * Detected change in '/Users/suryakangeyan/Sjsu Courses/CS 218 Cloud Computing /CS-218---Exam-1/app.py', reloading
+2024-11-14 15:08:58,164 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 15:08:58,682 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 15:08:58,748 - WARNING -  * Debugger is active!
+2024-11-14 15:08:58,757 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 15:08:59,090 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:59] "GET /socket.io/?EIO=4&transport=polling&t=PCix-DE HTTP/1.1" 200 -
+2024-11-14 15:08:59,100 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:59] "POST /socket.io/?EIO=4&transport=polling&t=PCix-DP&sid=pMoIpf3pt2nc43XoAAAA HTTP/1.1" 200 -
+2024-11-14 15:08:59,101 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:59] "GET /socket.io/?EIO=4&transport=polling&t=PCix-DP.0&sid=pMoIpf3pt2nc43XoAAAA HTTP/1.1" 200 -
+2024-11-14 15:08:59,104 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:59] "GET /socket.io/?EIO=4&transport=polling&t=PCix-DU&sid=pMoIpf3pt2nc43XoAAAA HTTP/1.1" 200 -
+2024-11-14 15:08:59,529 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:59] "GET /socket.io/?EIO=4&transport=polling&t=PCix-J_ HTTP/1.1" 200 -
+2024-11-14 15:08:59,535 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:59] "POST /socket.io/?EIO=4&transport=polling&t=PCix-KA&sid=xW_A2EjUwiftL0NHAAAC HTTP/1.1" 200 -
+2024-11-14 15:08:59,536 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:59] "GET /socket.io/?EIO=4&transport=polling&t=PCix-KB&sid=xW_A2EjUwiftL0NHAAAC HTTP/1.1" 200 -
+2024-11-14 15:08:59,539 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:59] "GET /socket.io/?EIO=4&transport=polling&t=PCix-KD HTTP/1.1" 200 -
+2024-11-14 15:08:59,543 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:59] "POST /socket.io/?EIO=4&transport=polling&t=PCix-KK&sid=bUjQ_LPXS-MNvZhDAAAE HTTP/1.1" 200 -
+2024-11-14 15:08:59,543 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:59] "GET /socket.io/?EIO=4&transport=polling&t=PCix-KK.0&sid=bUjQ_LPXS-MNvZhDAAAE HTTP/1.1" 200 -
+2024-11-14 15:08:59,548 - INFO - 127.0.0.1 - - [14/Nov/2024 15:08:59] "GET /socket.io/?EIO=4&transport=polling&t=PCix-KO&sid=bUjQ_LPXS-MNvZhDAAAE HTTP/1.1" 200 -
+2024-11-14 15:09:30,466 - INFO -  * Detected change in '/Users/suryakangeyan/Sjsu Courses/CS 218 Cloud Computing /CS-218---Exam-1/app.py', reloading
+2024-11-14 15:09:31,563 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 15:09:31,942 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 15:09:31,998 - WARNING -  * Debugger is active!
+2024-11-14 15:09:32,006 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 15:09:32,263 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:32] "GET /socket.io/?EIO=4&transport=polling&t=PCiy6JV HTTP/1.1" 200 -
+2024-11-14 15:09:32,274 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:32] "POST /socket.io/?EIO=4&transport=polling&t=PCiy6Jf&sid=4G0Z3EwFzA0TixxGAAAA HTTP/1.1" 200 -
+2024-11-14 15:09:32,277 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:32] "GET /socket.io/?EIO=4&transport=polling&t=PCiy6Jg&sid=4G0Z3EwFzA0TixxGAAAA HTTP/1.1" 200 -
+2024-11-14 15:09:32,855 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:32] "GET /socket.io/?EIO=4&transport=polling&t=PCiy6Sn HTTP/1.1" 200 -
+2024-11-14 15:09:32,861 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:32] "GET /socket.io/?EIO=4&transport=polling&t=PCiy6Sv&sid=4Ylkllgjy07SllcMAAAC HTTP/1.1" 200 -
+2024-11-14 15:09:32,861 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:32] "POST /socket.io/?EIO=4&transport=polling&t=PCiy6Su&sid=4Ylkllgjy07SllcMAAAC HTTP/1.1" 200 -
+2024-11-14 15:09:33,091 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:33] "GET /socket.io/?EIO=4&transport=polling&t=PCiy6WV HTTP/1.1" 200 -
+2024-11-14 15:09:33,104 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:33] "POST /socket.io/?EIO=4&transport=polling&t=PCiy6Wh&sid=Xg3r4HuoMMrjci9TAAAE HTTP/1.1" 200 -
+2024-11-14 15:09:33,105 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:33] "GET /socket.io/?EIO=4&transport=polling&t=PCiy6Wh.0&sid=Xg3r4HuoMMrjci9TAAAE HTTP/1.1" 200 -
+2024-11-14 15:09:33,872 - INFO -  * Detected change in '/Users/suryakangeyan/Sjsu Courses/CS 218 Cloud Computing /CS-218---Exam-1/app.py', reloading
+2024-11-14 15:09:34,959 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 15:09:35,275 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 15:09:35,304 - WARNING -  * Debugger is active!
+2024-11-14 15:09:35,312 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 15:09:35,655 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:35] "GET /socket.io/?EIO=4&transport=polling&t=PCiy78V HTTP/1.1" 200 -
+2024-11-14 15:09:35,666 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:35] "POST /socket.io/?EIO=4&transport=polling&t=PCiy78f&sid=AaPL98liU9dncI_ZAAAA HTTP/1.1" 200 -
+2024-11-14 15:09:35,667 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:35] "GET /socket.io/?EIO=4&transport=polling&t=PCiy78g&sid=AaPL98liU9dncI_ZAAAA HTTP/1.1" 200 -
+2024-11-14 15:09:35,896 - INFO -  * Detected change in '/Users/suryakangeyan/Sjsu Courses/CS 218 Cloud Computing /CS-218---Exam-1/app.py', reloading
+2024-11-14 15:09:36,092 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:36] "GET /socket.io/?EIO=4&transport=polling&t=PCiy7FP HTTP/1.1" 200 -
+2024-11-14 15:09:36,105 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:36] "POST /socket.io/?EIO=4&transport=polling&t=PCiy7Fc&sid=L0_wQrx1Tq-XG7IxAAAC HTTP/1.1" 200 -
+2024-11-14 15:09:36,106 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:36] "GET /socket.io/?EIO=4&transport=polling&t=PCiy7Fc.0&sid=L0_wQrx1Tq-XG7IxAAAC HTTP/1.1" 200 -
+2024-11-14 15:09:36,160 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:36] "GET /socket.io/?EIO=4&transport=polling&t=PCiy7GS HTTP/1.1" 200 -
+2024-11-14 15:09:36,166 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:36] "POST /socket.io/?EIO=4&transport=polling&t=PCiy7GX&sid=jW0IqjlpatoEFFRyAAAE HTTP/1.1" 200 -
+2024-11-14 15:09:36,168 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:36] "GET /socket.io/?EIO=4&transport=polling&t=PCiy7GY&sid=jW0IqjlpatoEFFRyAAAE HTTP/1.1" 200 -
+2024-11-14 15:09:36,997 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 15:09:37,281 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 15:09:37,311 - WARNING -  * Debugger is active!
+2024-11-14 15:09:37,318 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 15:09:37,856 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:37] "GET /socket.io/?EIO=4&transport=polling&t=PCiy7gx HTTP/1.1" 200 -
+2024-11-14 15:09:37,865 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:37] "POST /socket.io/?EIO=4&transport=polling&t=PCiy7h2&sid=Wv0NZUK3ejz69SDCAAAA HTTP/1.1" 200 -
+2024-11-14 15:09:37,866 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:37] "GET /socket.io/?EIO=4&transport=polling&t=PCiy7h3&sid=Wv0NZUK3ejz69SDCAAAA HTTP/1.1" 200 -
+2024-11-14 15:09:38,102 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:38] "GET /socket.io/?EIO=4&transport=polling&t=PCiy7kJ HTTP/1.1" 200 -
+2024-11-14 15:09:38,119 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:38] "POST /socket.io/?EIO=4&transport=polling&t=PCiy7kx&sid=839QX2aPl2Cf-byLAAAC HTTP/1.1" 200 -
+2024-11-14 15:09:38,120 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:38] "GET /socket.io/?EIO=4&transport=polling&t=PCiy7ky&sid=839QX2aPl2Cf-byLAAAC HTTP/1.1" 200 -
+2024-11-14 15:09:39,089 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:39] "GET /socket.io/?EIO=4&transport=polling&t=PCiy7-F HTTP/1.1" 200 -
+2024-11-14 15:09:39,100 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:39] "POST /socket.io/?EIO=4&transport=polling&t=PCiy7-P&sid=dgxrbJRmrG8yNQXhAAAE HTTP/1.1" 200 -
+2024-11-14 15:09:39,101 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:39] "GET /socket.io/?EIO=4&transport=polling&t=PCiy7-P.0&sid=dgxrbJRmrG8yNQXhAAAE HTTP/1.1" 200 -
+2024-11-14 15:09:39,103 - INFO - 127.0.0.1 - - [14/Nov/2024 15:09:39] "GET /socket.io/?EIO=4&transport=polling&t=PCiy7-U&sid=dgxrbJRmrG8yNQXhAAAE HTTP/1.1" 200 -
+2024-11-14 15:11:15,269 - INFO -  * Detected change in '/Users/suryakangeyan/Sjsu Courses/CS 218 Cloud Computing /CS-218---Exam-1/app.py', reloading
+2024-11-14 15:11:16,378 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 15:11:16,862 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 15:11:16,914 - WARNING -  * Debugger is active!
+2024-11-14 15:11:16,924 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 15:11:17,577 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:17] "GET /socket.io/?EIO=4&transport=polling&t=PCiyW0_ HTTP/1.1" 200 -
+2024-11-14 15:11:17,585 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:17] "POST /socket.io/?EIO=4&transport=polling&t=PCiyW1B&sid=6dS9w_p9U2V8WJMWAAAA HTTP/1.1" 200 -
+2024-11-14 15:11:17,586 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:17] "GET /socket.io/?EIO=4&transport=polling&t=PCiyW1C&sid=6dS9w_p9U2V8WJMWAAAA HTTP/1.1" 200 -
+2024-11-14 15:11:17,592 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:17] "GET /socket.io/?EIO=4&transport=polling&t=PCiyW1M&sid=6dS9w_p9U2V8WJMWAAAA HTTP/1.1" 200 -
+2024-11-14 15:11:17,786 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:17] "GET /socket.io/?EIO=4&transport=polling&t=PCiyW4K HTTP/1.1" 200 -
+2024-11-14 15:11:17,793 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:17] "POST /socket.io/?EIO=4&transport=polling&t=PCiyW4S&sid=y7Y-zWwBzsLXMPRYAAAC HTTP/1.1" 200 -
+2024-11-14 15:11:17,798 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:17] "GET /socket.io/?EIO=4&transport=polling&t=PCiyW4T&sid=y7Y-zWwBzsLXMPRYAAAC HTTP/1.1" 200 -
+2024-11-14 15:11:19,399 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 15:11:19,431 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3005
+ * Running on http://10.0.0.76:3005
+2024-11-14 15:11:19,431 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-14 15:11:19,431 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 15:11:19,669 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 15:11:19,697 - WARNING -  * Debugger is active!
+2024-11-14 15:11:19,704 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 15:11:19,707 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:19] "GET /socket.io/?EIO=4&transport=polling&t=PCiyWUl HTTP/1.1" 200 -
+2024-11-14 15:11:19,713 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:19] "POST /socket.io/?EIO=4&transport=polling&t=PCiyWYT&sid=pj00FUnbOxUmKI4AAAAA HTTP/1.1" 200 -
+2024-11-14 15:11:19,713 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:19] "GET /socket.io/?EIO=4&transport=polling&t=PCiyWYT.0&sid=pj00FUnbOxUmKI4AAAAA HTTP/1.1" 200 -
+2024-11-14 15:11:19,717 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:19] "GET /socket.io/?EIO=4&transport=polling&t=PCiyWYa&sid=pj00FUnbOxUmKI4AAAAA HTTP/1.1" 200 -
+2024-11-14 15:11:20,076 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:20] "GET /socket.io/?EIO=4&transport=polling&t=PCiyWe7 HTTP/1.1" 200 -
+2024-11-14 15:11:20,086 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:20] "POST /socket.io/?EIO=4&transport=polling&t=PCiyWeG&sid=2EwmwxOt05kGSRs3AAAC HTTP/1.1" 200 -
+2024-11-14 15:11:20,088 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:20] "GET /socket.io/?EIO=4&transport=polling&t=PCiyWeH&sid=2EwmwxOt05kGSRs3AAAC HTTP/1.1" 200 -
+2024-11-14 15:11:20,549 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:20] "GET /socket.io/?EIO=4&transport=polling&t=PCiyWlV HTTP/1.1" 200 -
+2024-11-14 15:11:20,561 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:20] "POST /socket.io/?EIO=4&transport=polling&t=PCiyWle&sid=prQYe2AJU9L9vCnuAAAE HTTP/1.1" 200 -
+2024-11-14 15:11:20,562 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:20] "GET /socket.io/?EIO=4&transport=polling&t=PCiyWle.0&sid=prQYe2AJU9L9vCnuAAAE HTTP/1.1" 200 -
+2024-11-14 15:11:20,569 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:20] "GET /socket.io/?EIO=4&transport=polling&t=PCiyWls&sid=prQYe2AJU9L9vCnuAAAE HTTP/1.1" 200 -
+2024-11-14 15:11:23,820 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:23] "GET /socket.io/?EIO=4&transport=websocket&sid=2EwmwxOt05kGSRs3AAAC HTTP/1.1" 200 -
+2024-11-14 15:11:24,752 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:24] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:11:24,851 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:24] "GET /socket.io/?EIO=4&transport=polling&t=PCiyXo2 HTTP/1.1" 200 -
+2024-11-14 15:11:24,859 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:24] "POST /socket.io/?EIO=4&transport=polling&t=PCiyXou&sid=uwkHAv4sqn0QCsJtAAAG HTTP/1.1" 200 -
+2024-11-14 15:11:24,860 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:24] "GET /socket.io/?EIO=4&transport=polling&t=PCiyXov&sid=uwkHAv4sqn0QCsJtAAAG HTTP/1.1" 200 -
+2024-11-14 15:11:24,931 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:24] "GET /socket.io/?EIO=4&transport=polling&t=PCiyXpq&sid=uwkHAv4sqn0QCsJtAAAG HTTP/1.1" 200 -
+2024-11-14 15:11:33,789 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:33] "GET /socket.io/?EIO=4&transport=websocket&sid=uwkHAv4sqn0QCsJtAAAG HTTP/1.1" 200 -
+2024-11-14 15:11:33,893 - INFO - New contestant added: hh with ID performer_20241114151133
+2024-11-14 15:11:33,894 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:33] "[32mPOST /add_contestant HTTP/1.1[0m" 302 -
+2024-11-14 15:11:34,512 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:34] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:11:34,550 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:34] "GET /socket.io/?EIO=4&transport=polling&t=PCiyaA2 HTTP/1.1" 200 -
+2024-11-14 15:11:34,570 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:34] "POST /socket.io/?EIO=4&transport=polling&t=PCiyaAb&sid=3t7px-2ebujZWa6kAAAI HTTP/1.1" 200 -
+2024-11-14 15:11:34,581 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:34] "GET /socket.io/?EIO=4&transport=polling&t=PCiyaAb.0&sid=3t7px-2ebujZWa6kAAAI HTTP/1.1" 200 -
+2024-11-14 15:11:34,643 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:34] "GET /socket.io/?EIO=4&transport=polling&t=PCiyaBA&sid=3t7px-2ebujZWa6kAAAI HTTP/1.1" 200 -
+2024-11-14 15:11:39,382 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:39] "GET /socket.io/?EIO=4&transport=websocket&sid=3t7px-2ebujZWa6kAAAI HTTP/1.1" 200 -
+2024-11-14 15:11:39,572 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:39] "[32mPOST /mark_performance_complete/performer_20241114151133 HTTP/1.1[0m" 302 -
+2024-11-14 15:11:40,228 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:40] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:11:40,290 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:40] "GET /socket.io/?EIO=4&transport=polling&t=PCiybZJ HTTP/1.1" 200 -
+2024-11-14 15:11:40,359 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:40] "POST /socket.io/?EIO=4&transport=polling&t=PCiybb1&sid=mfHUabIBhjkJ8Pg-AAAK HTTP/1.1" 200 -
+2024-11-14 15:11:40,359 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:40] "GET /socket.io/?EIO=4&transport=polling&t=PCiybb2&sid=mfHUabIBhjkJ8Pg-AAAK HTTP/1.1" 200 -
+2024-11-14 15:11:40,402 - INFO - 127.0.0.1 - - [14/Nov/2024 15:11:40] "GET /socket.io/?EIO=4&transport=polling&t=PCiybbN&sid=mfHUabIBhjkJ8Pg-AAAK HTTP/1.1" 200 -
+2024-11-14 15:12:56,448 - INFO -  * Detected change in '/Users/suryakangeyan/Sjsu Courses/CS 218 Cloud Computing /CS-218---Exam-1/app.py', reloading
+2024-11-14 15:12:57,548 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 15:12:59,845 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 15:12:59,899 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3005
+ * Running on http://10.0.0.76:3005
+2024-11-14 15:12:59,899 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-14 15:12:59,899 - INFO -  * Restarting with watchdog (fsevents)
+2024-11-14 15:13:00,166 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-14 15:13:00,198 - WARNING -  * Debugger is active!
+2024-11-14 15:13:00,209 - INFO -  * Debugger PIN: 185-235-702
+2024-11-14 15:13:00,960 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:00] "GET /socket.io/?EIO=4&transport=polling&t=PCiyvGQ HTTP/1.1" 200 -
+2024-11-14 15:13:00,970 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:00] "POST /socket.io/?EIO=4&transport=polling&t=PCiyvGZ&sid=IyOYmzK_2kzgZeB-AAAA HTTP/1.1" 200 -
+2024-11-14 15:13:00,971 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:00] "GET /socket.io/?EIO=4&transport=polling&t=PCiyvGb&sid=IyOYmzK_2kzgZeB-AAAA HTTP/1.1" 200 -
+2024-11-14 15:13:00,976 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:00] "GET /socket.io/?EIO=4&transport=polling&t=PCiyvGj&sid=IyOYmzK_2kzgZeB-AAAA HTTP/1.1" 200 -
+2024-11-14 15:13:01,091 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:01] "GET /socket.io/?EIO=4&transport=polling&t=PCiyvIW HTTP/1.1" 200 -
+2024-11-14 15:13:01,104 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:01] "POST /socket.io/?EIO=4&transport=polling&t=PCiyvIi&sid=xUXiT6N54ZJ04Y-cAAAC HTTP/1.1" 200 -
+2024-11-14 15:13:01,105 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:01] "GET /socket.io/?EIO=4&transport=polling&t=PCiyvIj&sid=xUXiT6N54ZJ04Y-cAAAC HTTP/1.1" 200 -
+2024-11-14 15:13:01,107 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:01] "GET /socket.io/?EIO=4&transport=polling&t=PCiyvIo&sid=xUXiT6N54ZJ04Y-cAAAC HTTP/1.1" 200 -
+2024-11-14 15:13:01,182 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:01] "GET /socket.io/?EIO=4&transport=polling&t=PCiyvJw HTTP/1.1" 200 -
+2024-11-14 15:13:01,191 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:01] "POST /socket.io/?EIO=4&transport=polling&t=PCiyvK0&sid=BolSYjSKmuPr4IAzAAAE HTTP/1.1" 200 -
+2024-11-14 15:13:01,191 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:01] "GET /socket.io/?EIO=4&transport=polling&t=PCiyvK1&sid=BolSYjSKmuPr4IAzAAAE HTTP/1.1" 200 -
+2024-11-14 15:13:01,196 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:01] "GET /socket.io/?EIO=4&transport=polling&t=PCiyvKA&sid=BolSYjSKmuPr4IAzAAAE HTTP/1.1" 200 -
+2024-11-14 15:13:03,902 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:03] "GET /socket.io/?EIO=4&transport=websocket&sid=xUXiT6N54ZJ04Y-cAAAC HTTP/1.1" 200 -
+2024-11-14 15:13:03,923 - INFO - deleting contestant 
+2024-11-14 15:13:03,924 - INFO - Attempting to delete contestant: performer_20241114151133
+2024-11-14 15:13:04,360 - INFO - Successfully deleted contestant: performer_20241114151133
+2024-11-14 15:13:04,362 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:04] "[32mPOST /delete_contestant/performer_20241114151133 HTTP/1.1[0m" 302 -
+2024-11-14 15:13:04,893 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:04] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:13:04,949 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:04] "GET /socket.io/?EIO=4&transport=polling&t=PCiywEn HTTP/1.1" 200 -
+2024-11-14 15:13:05,014 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:05] "POST /socket.io/?EIO=4&transport=polling&t=PCiywF1&sid=NwMlV0VYPLm8iSCXAAAG HTTP/1.1" 200 -
+2024-11-14 15:13:05,015 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:05] "GET /socket.io/?EIO=4&transport=polling&t=PCiywF1.0&sid=NwMlV0VYPLm8iSCXAAAG HTTP/1.1" 200 -
+2024-11-14 15:13:06,490 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:06] "GET /socket.io/?EIO=4&transport=websocket&sid=IyOYmzK_2kzgZeB-AAAA HTTP/1.1" 200 -
+2024-11-14 15:13:06,801 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:06] "GET /viewer HTTP/1.1" 200 -
+2024-11-14 15:13:06,838 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:06] "GET /socket.io/?EIO=4&transport=polling&t=PCiywiI HTTP/1.1" 200 -
+2024-11-14 15:13:06,876 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:06] "POST /socket.io/?EIO=4&transport=polling&t=PCiywil&sid=fQ71TWVDf3MxTAJHAAAI HTTP/1.1" 200 -
+2024-11-14 15:13:06,878 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:06] "GET /socket.io/?EIO=4&transport=polling&t=PCiywim&sid=fQ71TWVDf3MxTAJHAAAI HTTP/1.1" 200 -
+2024-11-14 15:13:07,074 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:07] "GET /socket.io/?EIO=4&transport=polling&t=PCiywlx&sid=fQ71TWVDf3MxTAJHAAAI HTTP/1.1" 200 -
+2024-11-14 15:13:07,104 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:07] "GET /socket.io/?EIO=4&transport=polling&t=PCiywmT&sid=fQ71TWVDf3MxTAJHAAAI HTTP/1.1" 200 -
+2024-11-14 15:13:07,233 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:07] "GET /socket.io/?EIO=4&transport=websocket&sid=BolSYjSKmuPr4IAzAAAE HTTP/1.1" 200 -
+2024-11-14 15:13:07,796 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:07] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:13:07,825 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:07] "GET /socket.io/?EIO=4&transport=polling&t=PCiywxk HTTP/1.1" 200 -
+2024-11-14 15:13:08,006 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:08] "POST /socket.io/?EIO=4&transport=polling&t=PCiyw-X&sid=wmwUq06IpK6zBxqOAAAK HTTP/1.1" 200 -
+2024-11-14 15:13:08,008 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:08] "GET /socket.io/?EIO=4&transport=polling&t=PCiyw-Y&sid=wmwUq06IpK6zBxqOAAAK HTTP/1.1" 200 -
+2024-11-14 15:13:08,031 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:08] "GET /socket.io/?EIO=4&transport=polling&t=PCiyw-v&sid=wmwUq06IpK6zBxqOAAAK HTTP/1.1" 200 -
+2024-11-14 15:13:08,066 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:08] "GET /socket.io/?EIO=4&transport=polling&t=PCiyw_V&sid=wmwUq06IpK6zBxqOAAAK HTTP/1.1" 200 -
+2024-11-14 15:13:09,676 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:09] "GET /socket.io/?EIO=4&transport=websocket&sid=NwMlV0VYPLm8iSCXAAAG HTTP/1.1" 200 -
+2024-11-14 15:13:09,794 - INFO - New contestant added: sdg with ID performer_20241114151309
+2024-11-14 15:13:09,795 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:09] "[32mPOST /add_contestant HTTP/1.1[0m" 302 -
+2024-11-14 15:13:10,558 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:10] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:13:10,619 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:10] "GET /socket.io/?EIO=4&transport=polling&t=PCiyxcm HTTP/1.1" 200 -
+2024-11-14 15:13:10,729 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:10] "POST /socket.io/?EIO=4&transport=polling&t=PCiyxeW&sid=YRcPUMwjUD4GDz-LAAAM HTTP/1.1" 200 -
+2024-11-14 15:13:10,730 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:10] "GET /socket.io/?EIO=4&transport=polling&t=PCiyxeW.0&sid=YRcPUMwjUD4GDz-LAAAM HTTP/1.1" 200 -
+2024-11-14 15:13:10,752 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:10] "GET /socket.io/?EIO=4&transport=polling&t=PCiyxfT&sid=YRcPUMwjUD4GDz-LAAAM HTTP/1.1" 200 -
+2024-11-14 15:13:14,977 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:14] "GET /socket.io/?EIO=4&transport=websocket&sid=YRcPUMwjUD4GDz-LAAAM HTTP/1.1" 200 -
+2024-11-14 15:13:15,185 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:15] "[32mPOST /mark_performance_complete/performer_20241114151309 HTTP/1.1[0m" 302 -
+2024-11-14 15:13:15,878 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:15] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:13:15,936 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:15] "GET /socket.io/?EIO=4&transport=polling&t=PCiyyvs HTTP/1.1" 200 -
+2024-11-14 15:13:15,941 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:15] "POST /socket.io/?EIO=4&transport=polling&t=PCiyywX&sid=lcLpm-PX1oYeKwz8AAAO HTTP/1.1" 200 -
+2024-11-14 15:13:15,943 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:15] "GET /socket.io/?EIO=4&transport=polling&t=PCiyywY&sid=lcLpm-PX1oYeKwz8AAAO HTTP/1.1" 200 -
+2024-11-14 15:13:15,948 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:15] "GET /socket.io/?EIO=4&transport=polling&t=PCiyywe&sid=lcLpm-PX1oYeKwz8AAAO HTTP/1.1" 200 -
+2024-11-14 15:13:47,015 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:47] "GET /socket.io/?EIO=4&transport=websocket&sid=wmwUq06IpK6zBxqOAAAK HTTP/1.1" 200 -
+2024-11-14 15:13:47,689 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:47] "GET /dashboard HTTP/1.1" 200 -
+2024-11-14 15:13:47,723 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:47] "GET /socket.io/?EIO=4&transport=polling&t=PCiz4h8 HTTP/1.1" 200 -
+2024-11-14 15:13:47,751 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:47] "POST /socket.io/?EIO=4&transport=polling&t=PCiz4hX&sid=Fw9A42N8JVcNE4ShAAAQ HTTP/1.1" 200 -
+2024-11-14 15:13:47,751 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:47] "GET /socket.io/?EIO=4&transport=polling&t=PCiz4hY&sid=Fw9A42N8JVcNE4ShAAAQ HTTP/1.1" 200 -
+2024-11-14 15:13:47,944 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:47] "GET /socket.io/?EIO=4&transport=polling&t=PCiz4kb&sid=Fw9A42N8JVcNE4ShAAAQ HTTP/1.1" 200 -
+2024-11-14 15:13:47,971 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:47] "GET /socket.io/?EIO=4&transport=polling&t=PCiz4kv&sid=Fw9A42N8JVcNE4ShAAAQ HTTP/1.1" 200 -
+2024-11-14 15:13:48,114 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:48] "GET /socket.io/?EIO=4&transport=websocket&sid=fQ71TWVDf3MxTAJHAAAI HTTP/1.1" 200 -
+2024-11-14 15:13:48,485 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:48] "GET /viewer HTTP/1.1" 200 -
+2024-11-14 15:13:48,530 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:48] "GET /socket.io/?EIO=4&transport=polling&t=PCiz4tX HTTP/1.1" 200 -
+2024-11-14 15:13:48,685 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:48] "POST /socket.io/?EIO=4&transport=polling&t=PCiz4w9&sid=Je9DdAHQXvnyWY1RAAAS HTTP/1.1" 200 -
+2024-11-14 15:13:48,685 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:48] "GET /socket.io/?EIO=4&transport=polling&t=PCiz4w9.0&sid=Je9DdAHQXvnyWY1RAAAS HTTP/1.1" 200 -
+2024-11-14 15:13:48,705 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:48] "GET /socket.io/?EIO=4&transport=polling&t=PCiz4wS&sid=Je9DdAHQXvnyWY1RAAAS HTTP/1.1" 200 -
+2024-11-14 15:13:48,718 - INFO - 127.0.0.1 - - [14/Nov/2024 15:13:48] "GET /socket.io/?EIO=4&transport=polling&t=PCiz4wi&sid=Je9DdAHQXvnyWY1RAAAS HTTP/1.1" 200 -

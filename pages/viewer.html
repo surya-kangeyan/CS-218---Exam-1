@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viewer Page</title>
+    <style>
+        /* Basic styling for the viewer page */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        .notification {
+            display: none;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .notification.show {
+            display: block;
+        }
+        .performance-started {
+            background-color: #4CAF50;
+        }
+        .voting-started {
+            background-color: #2196F3;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        /* Add any additional styling as needed */
+    </style>
+</head>
+<body>
+    <h1>Scoreboard</h1>
+
+    <div id="notification" class="notification"></div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Contestant Name</th>
+                <th>Weighted Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for performer in performers %}
+            <tr>
+                <td>{{ performer['rank'] }}</td>
+                <td>{{ performer['name'] }}</td>
+                <td>{{ performer['weighted_score'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script>
+        const socket = io.connect('http://localhost:3005'); // Update with actual server address
+        const notificationElement = document.getElementById('notification');
+
+        // Handle 'performance_started' event
+        socket.on('performance_started', (data) => {
+            console.log('Performance started event received:', data);
+
+            // Display notification
+            notificationElement.textContent = 'Performance has started.';
+            notificationElement.className = 'notification performance-started show';
+
+            // Hide notification after 30 seconds
+            setTimeout(() => {
+                notificationElement.classList.remove('show');
+            }, 30000); // 30 seconds in milliseconds
+        });
+
+        // Handle 'voting_started' event
+        socket.on('voting_started', (data) => {
+            console.log('Voting started event received:', data);
+
+            // Display notification
+            notificationElement.textContent = 'Voting started.';
+            notificationElement.className = 'notification voting-started show';
+
+            // Hide notification after 30 seconds
+            setTimeout(() => {
+                notificationElement.classList.remove('show');
+            }, 30000); // 30 seconds in milliseconds
+        });
+    </script>
+</body>
+</html>
